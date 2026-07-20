@@ -4,32 +4,114 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="">
+    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="init Project">
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:NaimaBarthel/DonjonsDragons.git",
-    "accountId": "28035fc4-18ce-45ac-ae36-5abe4ed38b18"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:NaimaBarthel/DonjonsDragons.git&quot;,
+    &quot;accountId&quot;: &quot;28035fc4-18ce-45ac-ae36-5abe4ed38b18&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.3816319279213323" />
+      <entry key="MS500" value="2.3578297894952347" />
+      <entry key="S2" value="2.8099674823916985" />
+      <entry key="S5" value="2.9212353661051385" />
+      <entry key="S10" value="2.960142540905781" />
+      <entry key="S30" value="2.988862554693315" />
+      <entry key="S60" value="3.117745015903388" />
+      <entry key="M2" value="4.030729626144904" />
+      <entry key="M5" value="7.253488716916466" />
+      <entry key="M10" value="10.62596448289863" />
+      <entry key="M15" value="13.44612218132066" />
+      <entry key="M30" value="26.374882152514324" />
+      <entry key="H1" value="64.55995551383572" />
+      <entry key="H2" value="131.6496824181605" />
+      <entry key="H4" value="205.9757869413208" />
+      <entry key="D1" value="315.7178281869689" />
+      <entry key="W1" value="341.4588912587383" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.13854928228393E-223" />
+      <entry key="S2" value="3.0918563962536335E-56" />
+      <entry key="S5" value="6.252989880230768E-23" />
+      <entry key="S10" value="7.907584890616583E-12" />
+      <entry key="S30" value="1.9922688944755507E-4" />
+      <entry key="S60" value="0.014114865253078632" />
+      <entry key="M2" value="0.11910523344125536" />
+      <entry key="M5" value="0.46738892912014157" />
+      <entry key="M10" value="0.9073120803444678" />
+      <entry key="M15" value="1.339015378719801" />
+      <entry key="M30" value="3.683286859276352" />
+      <entry key="H1" value="12.308652514521379" />
+      <entry key="H2" value="29.81228751658979" />
+      <entry key="H4" value="50.366529088921844" />
+      <entry key="D1" value="81.38841446463167" />
+      <entry key="W1" value="88.70794697706212" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.2817802496830006" />
+      <entry key="MS500" value="2.3198111043847853" />
+      <entry key="S2" value="2.7983713579805136" />
+      <entry key="S5" value="2.916390733206057" />
+      <entry key="S10" value="2.95768416193144" />
+      <entry key="S30" value="2.9881243262946056" />
+      <entry key="S60" value="3.128392587304976" />
+      <entry key="M2" value="4.1374767416194045" />
+      <entry key="M5" value="7.701951571370042" />
+      <entry key="M10" value="11.515969026639564" />
+      <entry key="M15" value="14.76869091014923" />
+      <entry key="M30" value="30.037570597570046" />
+      <entry key="H1" value="76.83848361522796" />
+      <entry key="H2" value="161.4281836816292" />
+      <entry key="H4" value="256.31462458038914" />
+      <entry key="D1" value="397.098912510326" />
+      <entry key="W1" value="430.1656993191733" />
+    </decayedShown>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "main"
+    "Application.Main.executor": "Run",
+    "git-widget-placeholder": "main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="TaskManager">
@@ -45,5 +127,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init Project" />
   </component>
 </project>
