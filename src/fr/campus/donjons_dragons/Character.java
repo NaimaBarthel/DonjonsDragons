@@ -1,6 +1,6 @@
 package fr.campus.donjons_dragons;
 
-public class Character {
+public abstract class Character {
 
     //Attributs
    //private String typeCharacter;  //type Character : Warrior or Wizard
@@ -10,7 +10,6 @@ public class Character {
    private OffensiveEquipment offensiveEquip;
 
    //constructeurs
-   //public Character(String typeChar, String name, int leveLife, int levelAttack, OffensiveEquipment offensiveEquip){
    public Character( String name, int leveLife, int levelAttack, OffensiveEquipment offensiveEquip){
        //this.typeCharacter = typeChar;
        this.name = name;
@@ -19,11 +18,8 @@ public class Character {
        this.offensiveEquip = offensiveEquip;
    }
 
-   //Getters
-   /*public String getTypeCharacter(){
-       return typeCharacter;
-   }*/
 
+   //Getters
    public String getName(){
        return name;
    }
@@ -42,10 +38,6 @@ public class Character {
 
 
    //Setters
-   /*public void setTypeCharacter(String typeChar){
-       this.typeCharacter = typeChar;
-   }*/
-
    public void setName(String name){
        this.name = name;
    }
@@ -66,10 +58,13 @@ public class Character {
     //toString  méthode pour afficher les informations du personnages
     @Override
     public String toString(){
-       //return String.format("Character [ Type: %s, Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s]",
         return String.format("Character [ Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s]",
                 name, levelLife,levelAttack,offensiveEquip);
     }
 
+    //Méthode pour modifier le personnage
+    public abstract void modifyAttributes(){
+
+    }
 
 }

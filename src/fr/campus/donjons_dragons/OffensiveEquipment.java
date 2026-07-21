@@ -33,7 +33,7 @@ public class OffensiveEquipment {
     public void setAttackLevel(int attackLevel){
         this.attackLevel = attackLevel;
     }
-    public void setName(String Name){
+    public void setName(String name){
         this.name = name;
     }
 
