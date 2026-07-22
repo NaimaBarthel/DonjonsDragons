@@ -4,24 +4,15 @@ public class Main {
     //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
     public static void main() {
-        Menu menu = new Menu();
+        Game game = new Game();
+        //on lance le jeu
+        game.start();
 
-        menu.intro();
-        int chosenType = menu.askPlayerInt("Choisissez le type de personnage:\n1. Warrior\n2. Wizard\n>");
-        System.out.println(chosenType);
-        String chosenName = menu.askPlayerName("Choisissez le nom de votre personnage:\n>");
-        System.out.println(chosenName);
 
-        Character monPersonnage;
-        if (chosenType == 1) {
-            monPersonnage = new Warrior(chosenName, 10, 5, new OffensiveEquipment("none", 0, "none"));
-        } else //(chosenType == 2)
-        {
-            monPersonnage = new Wizard(chosenName, 7, 7, new OffensiveEquipment("none", 0, "none"));
-        }
 
-        System.out.println("Mon Personnage: " + monPersonnage.toString());
 
+       /* System.out.println("Mon Personnage: " + game   .toString());
+        boolean modifyChar = menu.askModifyAttributes();
 
 
 

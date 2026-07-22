@@ -1,5 +1,4 @@
 package fr.campus.donjons_dragons;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static fr.campus.donjons_dragons.Game.NUM_TYPE_PLAYER;
@@ -47,7 +46,7 @@ public class Menu {
      * @return l'entier saisi par l'utilisateur qui doit être valide
      *
      */
-    public int askPlayerInt(String message){
+    public int askPlayerTypeInt(String message){
         int numPlayer;
         while(true) {
 
@@ -58,40 +57,42 @@ public class Menu {
                     return numPlayer;
                 }
                 else{
-                    System.out.println("Erreur : veuillez saisir un nombre entre 1 et " );
+                    System.out.println("Erreur : veuillez saisir un nombre entre 1 et " + NUM_TYPE_PLAYER );
                 }
             }
 
     }
 
     /**
-     * Demande à l'utilisateur de saisir un nom.
+     * Demande à l'utilisateur de saisir du texte (du nom par exemple)
      *
      * @param message le message à afficher pour guider l'utilisateur
-     * @return une chaine de caractère saisi par l'utilisateur
+     * @return une chaine de caractère saisie par l'utilisateur
      *
      */
-    public String askPlayerName(String message){
-        String messInput;
-        System.out.println(message);
-        messInput = scanner.nextLine();
-
+    public String askPlayerString(String message){
+        System.out.print(message);
+        String messInput = scanner.nextLine();
+        if(messInput.equalsIgnoreCase("Q")){
+            System.exit(0);
+        }
         return messInput;
     }
 
-    public boolean askModifyAttributes(){
-        boolean modif = false;
+    public boolean askModifyCharacter(){
+        //boolean modif = false;
 
         while(true) {
 
-            System.out.println("Voulez-vous modifier les infos de votre personnage?O/N");
-            numPlayer = scanner.nextInt();
-            if( numPlayer >=1 && numPlayer <= NUM_TYPE_PLAYER){
-                scanner.nextLine();  //nettoie le buffer
-                return numPlayer;
+            String response = askPlayerString("Voulez-vous modifier les infos de votre personnage?O/N");
+            if (response.equalsIgnoreCase("o")){
+                return true;
             }
-            else{
-                System.out.println("Erreur : veuillez saisir un nombre entre 1 et " );
+            else if (response.equalsIgnoreCase("n")){
+                return false;
+                }
+                else{
+                    System.out.println("Erreur: veuillez saisir 'O' ou 'N'.");
             }
         }
     }

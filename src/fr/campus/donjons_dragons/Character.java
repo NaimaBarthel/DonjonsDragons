@@ -2,14 +2,14 @@ package fr.campus.donjons_dragons;
 
 public abstract class Character {
 
-    //Attributs
+    //Attributes
    //private String typeCharacter;  //type Character : Warrior or Wizard
    private String name;
    private int levelLife;
    private int levelAttack;
    private OffensiveEquipment offensiveEquip;
 
-   //constructeurs
+   //constructors
    public Character( String name, int leveLife, int levelAttack, OffensiveEquipment offensiveEquip){
        //this.typeCharacter = typeChar;
        this.name = name;
@@ -43,14 +43,20 @@ public abstract class Character {
    }
 
    public void setLevelLife(int leveLife){
-       this.levelLife = leveLife;
+       //verify to avoid negative points
+       if (leveLife >=0) {
+           this.levelLife = leveLife;
+       }
+       else {
+           this.levelLife = 0;  // if < 0, =0
+       }
    }
 
    public void setLevelAttack(int levelAttack){
        this.levelAttack = levelAttack;
    }
 
-   public void setOffensivEquip(OffensiveEquipment offensiveEquip){
+   public void setOffensiveEquip(OffensiveEquipment offensiveEquip){
        this.offensiveEquip = offensiveEquip;
    }
 
@@ -63,8 +69,8 @@ public abstract class Character {
     }
 
     //Méthode pour modifier le personnage
-    public abstract void modifyAttributes(){
+   /* public abstract void modifyAttributes(){
 
-    }
+    }*/
 
 }

@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="init Project">
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" afterDir="false" />
+    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="update project 20/07/2026">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NaimaBarthel"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:NaimaBarthel/DonjonsDragons.git&quot;,
@@ -44,63 +48,68 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3816319279213323" />
-      <entry key="MS500" value="2.3578297894952347" />
-      <entry key="S2" value="2.8099674823916985" />
-      <entry key="S5" value="2.9212353661051385" />
-      <entry key="S10" value="2.960142540905781" />
-      <entry key="S30" value="2.988862554693315" />
-      <entry key="S60" value="3.117745015903388" />
-      <entry key="M2" value="4.030729626144904" />
-      <entry key="M5" value="7.253488716916466" />
-      <entry key="M10" value="10.62596448289863" />
-      <entry key="M15" value="13.44612218132066" />
-      <entry key="M30" value="26.374882152514324" />
-      <entry key="H1" value="64.55995551383572" />
-      <entry key="H2" value="131.6496824181605" />
-      <entry key="H4" value="205.9757869413208" />
-      <entry key="D1" value="315.7178281869689" />
-      <entry key="W1" value="341.4588912587383" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000037722486" />
+      <entry key="S2" value="1.013936383115939" />
+      <entry key="S5" value="1.1809922715474448" />
+      <entry key="S10" value="1.4254318647532702" />
+      <entry key="S30" value="1.752101881126055" />
+      <entry key="S60" value="1.867441253665179" />
+      <entry key="M2" value="1.9836564149244609" />
+      <entry key="M5" value="3.744631102998888" />
+      <entry key="M10" value="8.386490510419758" />
+      <entry key="M15" value="12.429252588276745" />
+      <entry key="M30" value="22.500702320800915" />
+      <entry key="H1" value="41.1061478267743" />
+      <entry key="H2" value="70.98700956780071" />
+      <entry key="H4" value="108.21825327371053" />
+      <entry key="D1" value="434.0283809792749" />
+      <entry key="W1" value="753.1882168277976" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="9.13854928228393E-223" />
-      <entry key="S2" value="3.0918563962536335E-56" />
-      <entry key="S5" value="6.252989880230768E-23" />
-      <entry key="S10" value="7.907584890616583E-12" />
-      <entry key="S30" value="1.9922688944755507E-4" />
-      <entry key="S60" value="0.014114865253078632" />
-      <entry key="M2" value="0.11910523344125536" />
-      <entry key="M5" value="0.46738892912014157" />
-      <entry key="M10" value="0.9073120803444678" />
-      <entry key="M15" value="1.339015378719801" />
-      <entry key="M30" value="3.683286859276352" />
-      <entry key="H1" value="12.308652514521379" />
-      <entry key="H2" value="29.81228751658979" />
-      <entry key="H4" value="50.366529088921844" />
-      <entry key="D1" value="81.38841446463167" />
-      <entry key="W1" value="88.70794697706212" />
+      <entry key="MS100" value="7.365333884204433E-73" />
+      <entry key="MS500" value="3.744885018231286E-15" />
+      <entry key="S2" value="2.473771728904016E-4" />
+      <entry key="S5" value="0.03608642409889656" />
+      <entry key="S10" value="0.18996427058501433" />
+      <entry key="S30" value="0.5748536732129398" />
+      <entry key="S60" value="0.7582501693335513" />
+      <entry key="M2" value="0.8784324869108296" />
+      <entry key="M5" value="1.0967838784715007" />
+      <entry key="M10" value="1.4924589606752077" />
+      <entry key="M15" value="1.936492981830201" />
+      <entry key="M30" value="3.4708526141750076" />
+      <entry key="H1" value="6.613391088440812" />
+      <entry key="H2" value="11.684970606209331" />
+      <entry key="H4" value="17.916382074733647" />
+      <entry key="D1" value="74.24405848975547" />
+      <entry key="W1" value="133.78545697040943" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2817802496830006" />
-      <entry key="MS500" value="2.3198111043847853" />
-      <entry key="S2" value="2.7983713579805136" />
-      <entry key="S5" value="2.916390733206057" />
-      <entry key="S10" value="2.95768416193144" />
-      <entry key="S30" value="2.9881243262946056" />
-      <entry key="S60" value="3.128392587304976" />
-      <entry key="M2" value="4.1374767416194045" />
-      <entry key="M5" value="7.701951571370042" />
-      <entry key="M10" value="11.515969026639564" />
-      <entry key="M15" value="14.76869091014923" />
-      <entry key="M30" value="30.037570597570046" />
-      <entry key="H1" value="76.83848361522796" />
-      <entry key="H2" value="161.4281836816292" />
-      <entry key="H4" value="256.31462458038914" />
-      <entry key="D1" value="397.098912510326" />
-      <entry key="W1" value="430.1656993191733" />
+      <entry key="MS100" value="4.6244472984086434E-10" />
+      <entry key="MS500" value="0.0135835187059342" />
+      <entry key="S2" value="0.3514367953222146" />
+      <entry key="S5" value="0.8289819839950783" />
+      <entry key="S10" value="1.345967614931486" />
+      <entry key="S30" value="2.1873764854535978" />
+      <entry key="S60" value="2.54448681563395" />
+      <entry key="M2" value="2.8175594794861327" />
+      <entry key="M5" value="4.817344216200489" />
+      <entry key="M10" value="9.858733399242618" />
+      <entry key="M15" value="14.346616966185268" />
+      <entry key="M30" value="25.95156996677721" />
+      <entry key="H1" value="47.69668052228174" />
+      <entry key="H2" value="82.64998938476532" />
+      <entry key="H4" value="126.1177016951752" />
+      <entry key="D1" value="508.2637567050301" />
+      <entry key="W1" value="886.9716144805972" />
     </decayedShown>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3Go07iRZ58DT5MofQvo0KhxN48z" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -110,12 +119,62 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.campus.donjons_dragons.Main" />
+      <module name="DonjonsDragons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.campus.donjons_dragons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.258" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.258" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="update project 20/07/2026" />
+      <created>1784622452399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784622452399</updated>
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -130,6 +189,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init Project" />
+    <MESSAGE value="update project 20/07/2026" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project 20/07/2026" />
   </component>
 </project>
