@@ -1,6 +1,6 @@
 package fr.campus.donjons_dragons;
 
-public class Wizard extends Character{
+public class Wizard extends Character {
     protected final String type = "WIZARD";
 
     public Wizard(String name) {
@@ -8,8 +8,8 @@ public class Wizard extends Character{
     }
 
     //toString  méthode pour afficher les informations du personnages
-    public String toString(){
+    public String toString() {
         return String.format("Wizard [ Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s]",
-                super.getName(), super.getLevelLife(),super.getLevelAttack(),super.getOffensiveEquip());
+                super.getName(), super.getLevelLife(), super.getLevelAttack(), super.getOffensiveEquip());
     }
 }

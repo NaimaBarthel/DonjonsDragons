@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="update project 20/07/2026">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DonjonsDragons/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" afterDir="false" />
     </list>
@@ -30,12 +31,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NaimaBarthel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NaimaBarthel&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:NaimaBarthel/DonjonsDragons.git&quot;,
@@ -48,67 +49,67 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000037722486" />
-      <entry key="S2" value="1.013936383115939" />
-      <entry key="S5" value="1.1809922715474448" />
-      <entry key="S10" value="1.4254318647532702" />
-      <entry key="S30" value="1.752101881126055" />
-      <entry key="S60" value="1.867441253665179" />
-      <entry key="M2" value="1.9836564149244609" />
-      <entry key="M5" value="3.744631102998888" />
-      <entry key="M10" value="8.386490510419758" />
-      <entry key="M15" value="12.429252588276745" />
-      <entry key="M30" value="22.500702320800915" />
-      <entry key="H1" value="41.1061478267743" />
-      <entry key="H2" value="70.98700956780071" />
-      <entry key="H4" value="108.21825327371053" />
-      <entry key="D1" value="434.0283809792749" />
-      <entry key="W1" value="753.1882168277976" />
+      <entry key="MS100" value="1.0000000000008085" />
+      <entry key="MS500" value="1.0038631427971125" />
+      <entry key="S2" value="1.358290248185237" />
+      <entry key="S5" value="2.1775428612164136" />
+      <entry key="S10" value="2.8496591406713643" />
+      <entry key="S30" value="3.544060474937406" />
+      <entry key="S60" value="3.7613948629704996" />
+      <entry key="M2" value="3.883110771442261" />
+      <entry key="M5" value="4.131136401010135" />
+      <entry key="M10" value="4.770940831942118" />
+      <entry key="M15" value="5.651428569284903" />
+      <entry key="M30" value="10.374129595964238" />
+      <entry key="H1" value="25.37344539363785" />
+      <entry key="H2" value="57.10730753030833" />
+      <entry key="H4" value="103.01658089739348" />
+      <entry key="D1" value="441.4222261547536" />
+      <entry key="W1" value="779.8126318032379" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="7.365333884204433E-73" />
-      <entry key="MS500" value="3.744885018231286E-15" />
-      <entry key="S2" value="2.473771728904016E-4" />
-      <entry key="S5" value="0.03608642409889656" />
-      <entry key="S10" value="0.18996427058501433" />
-      <entry key="S30" value="0.5748536732129398" />
-      <entry key="S60" value="0.7582501693335513" />
-      <entry key="M2" value="0.8784324869108296" />
-      <entry key="M5" value="1.0967838784715007" />
-      <entry key="M10" value="1.4924589606752077" />
-      <entry key="M15" value="1.936492981830201" />
-      <entry key="M30" value="3.4708526141750076" />
-      <entry key="H1" value="6.613391088440812" />
-      <entry key="H2" value="11.684970606209331" />
-      <entry key="H4" value="17.916382074733647" />
-      <entry key="D1" value="74.24405848975547" />
-      <entry key="W1" value="133.78545697040943" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.866467045E-315" />
+      <entry key="S10" value="8.789624126216823E-158" />
+      <entry key="S30" value="9.141677489578097E-53" />
+      <entry key="S60" value="1.6555614164228264E-26" />
+      <entry key="M2" value="2.297232779427267E-13" />
+      <entry key="M5" value="2.1174253666911814E-5" />
+      <entry key="M10" value="0.011358433203800696" />
+      <entry key="M15" value="0.09933506590609295" />
+      <entry key="M30" value="1.0039761054911267" />
+      <entry key="H1" value="3.986933653972584" />
+      <entry key="H2" value="9.87563599427664" />
+      <entry key="H4" value="17.97763581001149" />
+      <entry key="D1" value="76.75636898529973" />
+      <entry key="W1" value="139.63848732739396" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.6244472984086434E-10" />
-      <entry key="MS500" value="0.0135835187059342" />
-      <entry key="S2" value="0.3514367953222146" />
-      <entry key="S5" value="0.8289819839950783" />
-      <entry key="S10" value="1.345967614931486" />
-      <entry key="S30" value="2.1873764854535978" />
-      <entry key="S60" value="2.54448681563395" />
-      <entry key="M2" value="2.8175594794861327" />
-      <entry key="M5" value="4.817344216200489" />
-      <entry key="M10" value="9.858733399242618" />
-      <entry key="M15" value="14.346616966185268" />
-      <entry key="M30" value="25.95156996677721" />
-      <entry key="H1" value="47.69668052228174" />
-      <entry key="H2" value="82.64998938476532" />
-      <entry key="H4" value="126.1177016951752" />
-      <entry key="D1" value="508.2637567050301" />
-      <entry key="W1" value="886.9716144805972" />
+      <entry key="MS100" value="5.2489105324614066E-11" />
+      <entry key="MS500" value="0.010780659270508126" />
+      <entry key="S2" value="0.6093214614024427" />
+      <entry key="S5" value="1.7234499024918177" />
+      <entry key="S10" value="2.577113154732814" />
+      <entry key="S30" value="3.4394479759049377" />
+      <entry key="S60" value="3.707054096137905" />
+      <entry key="M2" value="3.8553999159258203" />
+      <entry key="M5" value="4.119806899033011" />
+      <entry key="M10" value="4.775861135241572" />
+      <entry key="M15" value="5.74533928372968" />
+      <entry key="M30" value="11.371682536988095" />
+      <entry key="H1" value="29.349808376289403" />
+      <entry key="H2" value="66.96834592763314" />
+      <entry key="H4" value="120.9800089871017" />
+      <entry key="D1" value="518.1699503111082" />
+      <entry key="W1" value="919.4490103172461" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3Go07iRZ58DT5MofQvo0KhxN48z" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -132,6 +133,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
