@@ -7,8 +7,10 @@ public class OffensiveEquipment {
     private String name;
 
     //constructor
+
     /**
      * Constructeur de l'objet OffensiveEquipment
+     *
      * @param offensiveEquipTyp une chaine de caractères, attackLevel un entier, name une chaine de caractères
      * @return une instance de OffensiveEquipment
      */
@@ -19,8 +21,10 @@ public class OffensiveEquipment {
     }
 
     //Getter
+
     /**
      * Getter du type de l'équipement offensif
+     *
      * @param :
      * @return une chaine de character: le type de l'équipement offensif
      */
@@ -29,25 +33,8 @@ public class OffensiveEquipment {
     }
 
     /**
-     * Getter du niveau d'attaque de l'équipement offensif
-     * @param :
-     * @return un entier: le niveau d'attaque de l'équipement offensif
-     */
-    public int getAttackLevel() {
-        return attackLevel;
-    }
-
-    /**
-     * Getter du nom de l'équipement offensif
-     * @param :
-     * @return une chaine de character: le nom de l'équipement offensif
-     */
-    public String getName() {
-        return name;
-    }
-    //Setters
-    /**
      * Setter du type de l'équipement offensif
+     *
      * @param offensiveEquip une chaine de caractère
      * @return
      */
@@ -56,7 +43,19 @@ public class OffensiveEquipment {
     }
 
     /**
+     * Getter du niveau d'attaque de l'équipement offensif
+     *
+     * @param :
+     * @return un entier: le niveau d'attaque de l'équipement offensif
+     */
+    public int getAttackLevel() {
+        return attackLevel;
+    }
+    //Setters
+
+    /**
      * Setter du niveau d'attaque de l'équipement offensif
+     *
      * @param attackLevel une chaine de caractère
      * @return
      */
@@ -65,7 +64,18 @@ public class OffensiveEquipment {
     }
 
     /**
+     * Getter du nom de l'équipement offensif
+     *
+     * @param :
+     * @return une chaine de character: le nom de l'équipement offensif
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
      * Setter du nom de l'équipement offensif
+     *
      * @param name une chaine de caractère
      * @return
      */
@@ -75,8 +85,10 @@ public class OffensiveEquipment {
 
 
     //toString  méthode pour afficher les informations de l'équipememnt d'attaque
+
     /**
      * Méthode toString qui affiche l' objet OffensiveEquipment
+     *
      * @param
      * @return une chaine de caractères
      */

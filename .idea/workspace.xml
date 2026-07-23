@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="update project 20/07/2026">
+    <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="fin partie 2.2 Structure du jeu et création de personnages  23/07/2026">
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Dice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000008085" />
-      <entry key="MS500" value="1.0038631427971125" />
-      <entry key="S2" value="1.358290248185237" />
-      <entry key="S5" value="2.1775428612164136" />
-      <entry key="S10" value="2.8496591406713643" />
-      <entry key="S30" value="3.544060474937406" />
-      <entry key="S60" value="3.7613948629704996" />
-      <entry key="M2" value="3.883110771442261" />
-      <entry key="M5" value="4.131136401010135" />
-      <entry key="M10" value="4.770940831942118" />
-      <entry key="M15" value="5.651428569284903" />
-      <entry key="M30" value="10.374129595964238" />
-      <entry key="H1" value="25.37344539363785" />
-      <entry key="H2" value="57.10730753030833" />
-      <entry key="H4" value="103.01658089739348" />
-      <entry key="D1" value="441.4222261547536" />
-      <entry key="W1" value="779.8126318032379" />
+      <entry key="MS100" value="1.0000000000077982" />
+      <entry key="MS500" value="1.0060090977818275" />
+      <entry key="S2" value="1.3361701696344246" />
+      <entry key="S5" value="2.1895709735109126" />
+      <entry key="S10" value="3.2542759077281276" />
+      <entry key="S30" value="4.776401548826735" />
+      <entry key="S60" value="5.65213677984825" />
+      <entry key="M2" value="7.906361767984291" />
+      <entry key="M5" value="15.078698188531568" />
+      <entry key="M10" value="24.947497007441008" />
+      <entry key="M15" value="33.322983046379036" />
+      <entry key="M30" value="51.576324990437094" />
+      <entry key="H1" value="73.16196482640306" />
+      <entry key="H2" value="103.00022731144107" />
+      <entry key="H4" value="152.78766133923813" />
+      <entry key="D1" value="510.4888680035693" />
+      <entry key="W1" value="893.3235892902753" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="2.866467045E-315" />
-      <entry key="S10" value="8.789624126216823E-158" />
-      <entry key="S30" value="9.141677489578097E-53" />
-      <entry key="S60" value="1.6555614164228264E-26" />
-      <entry key="M2" value="2.297232779427267E-13" />
-      <entry key="M5" value="2.1174253666911814E-5" />
-      <entry key="M10" value="0.011358433203800696" />
-      <entry key="M15" value="0.09933506590609295" />
-      <entry key="M30" value="1.0039761054911267" />
-      <entry key="H1" value="3.986933653972584" />
-      <entry key="H2" value="9.87563599427664" />
-      <entry key="H4" value="17.97763581001149" />
-      <entry key="D1" value="76.75636898529973" />
-      <entry key="W1" value="139.63848732739396" />
+      <entry key="S5" value="2.606376793730814E-144" />
+      <entry key="S10" value="1.6144276985144966E-72" />
+      <entry key="S30" value="1.1731121514388479E-24" />
+      <entry key="S60" value="1.083103019771826E-12" />
+      <entry key="M2" value="1.0407223547959283E-6" />
+      <entry key="M5" value="0.0040451660826827125" />
+      <entry key="M10" value="0.06375107739310658" />
+      <entry key="M15" value="0.16215379713643735" />
+      <entry key="M30" value="0.4538306204569118" />
+      <entry key="H1" value="1.0200260905963425" />
+      <entry key="H2" value="3.239687193984052" />
+      <entry key="H4" value="9.603210463666844" />
+      <entry key="D1" value="69.01476888342529" />
+      <entry key="W1" value="138.9685225343236" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.2489105324614066E-11" />
-      <entry key="MS500" value="0.010780659270508126" />
-      <entry key="S2" value="0.6093214614024427" />
-      <entry key="S5" value="1.7234499024918177" />
-      <entry key="S10" value="2.577113154732814" />
-      <entry key="S30" value="3.4394479759049377" />
-      <entry key="S60" value="3.707054096137905" />
-      <entry key="M2" value="3.8553999159258203" />
-      <entry key="M5" value="4.119806899033011" />
-      <entry key="M10" value="4.775861135241572" />
-      <entry key="M15" value="5.74533928372968" />
-      <entry key="M30" value="11.371682536988095" />
-      <entry key="H1" value="29.349808376289403" />
-      <entry key="H2" value="66.96834592763314" />
-      <entry key="H4" value="120.9800089871017" />
-      <entry key="D1" value="518.1699503111082" />
-      <entry key="W1" value="919.4490103172461" />
+      <entry key="MS100" value="7.1470746347700375E-9" />
+      <entry key="MS500" value="0.023506320595435348" />
+      <entry key="S2" value="0.5022824522814806" />
+      <entry key="S5" value="1.5634843792859634" />
+      <entry key="S10" value="2.8275943410440685" />
+      <entry key="S30" value="4.592476862871494" />
+      <entry key="S60" value="5.54642539350823" />
+      <entry key="M2" value="7.8295875751485395" />
+      <entry key="M5" value="15.019649208674222" />
+      <entry key="M10" value="24.958681146253568" />
+      <entry key="M15" value="33.43851703579384" />
+      <entry key="M30" value="51.994021358169945" />
+      <entry key="H1" value="74.15641149576922" />
+      <entry key="H2" value="106.22139020098614" />
+      <entry key="H4" value="162.3756760257734" />
+      <entry key="D1" value="579.4944226282381" />
+      <entry key="W1" value="1032.2898013208421" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -192,6 +191,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init Project" />
     <MESSAGE value="update project 20/07/2026" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project 20/07/2026" />
+    <MESSAGE value="fin partie 2.2 Structure du jeu et création de personnages  23/07/2026" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin partie 2.2 Structure du jeu et création de personnages  23/07/2026" />
   </component>
 </project>

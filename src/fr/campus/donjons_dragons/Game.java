@@ -8,6 +8,7 @@ public class Game {
     public static final int NUM_TYPE_PLAYER = 2;
     private Character player;
     private Menu menu = Menu.getInstance();
+    private Dice dice = new Dice();
 
 
     /**
@@ -17,8 +18,9 @@ public class Game {
     public Game() {
     }
 
-     /**
+    /**
      * Getter pour le personnage.
+     *
      * @return le personnage actuel
      */
     public Character getPlayer() {
@@ -30,10 +32,19 @@ public class Game {
      * affiche le menu pour créer un personnage
      */
     public void start() {
+        boolean running = true;
         menu.intro();
-        createPlayer();
-        displayPlayer();
-        modifyPlayer();
+        while(running){
+            if(menu.askToStartAGame())   {
+                createPlayer();
+                displayPlayer();
+                modifyPlayer();
+            } else{
+                running = false;
+                System.out.println("A bientôt!!!");
+            }
+        }
+
     }
 
     /**

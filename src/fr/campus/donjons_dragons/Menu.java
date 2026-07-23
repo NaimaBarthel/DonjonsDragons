@@ -44,6 +44,27 @@ public class Menu {
     }
 
     /**
+     * Demande à l'utilisateur s'il veut modifier les informations (nom ou type) de son personnage
+     *
+     * @param
+     * @return booléen vrai s'il veut modifier des infos , faux s'il ne veut rien changer
+     *
+     */
+    public boolean askToStartAGame() {
+        while (true) {
+            String response = askPlayerString("Voulez-vous démarrer une partie? O/N ");
+            if (response.equalsIgnoreCase("o")) {
+                return true;
+            } else if (response.equalsIgnoreCase("n")) {
+                return false;
+            } else {
+                System.out.println("Erreur: veuillez saisir 'O' ou 'N'.");
+            }
+        }
+    }
+
+
+    /**
      * Demande à l'utilisateur de saisir un entier et le retourne.
      *
      * @param message le message à afficher pour guider l'utilisateur
@@ -69,7 +90,7 @@ public class Menu {
     /**
      * Demande à l'utilisateur de saisir du texte (du nom par exemple)
      *
-     * @param message le message à afficher pour guider l'utilisateur
+     * @param message une chaine de caractère :le message à afficher pour guider l'utilisateur
      * @return une chaine de caractère saisie par l'utilisateur
      *
      */
@@ -82,11 +103,18 @@ public class Menu {
         return messInput;
     }
 
+    /**
+     * Demande à l'utilisateur s'il veut modifier les informations (nom ou type) de son personnage
+     *
+     * @param
+     * @return booléen vrai s'il veut modifier des infos , faux s'il ne veut rien changer
+     *
+     */
     public boolean askModifyCharacter() {
         //boolean modif = false;
 
         while (true) {
-            String response = askPlayerString("Voulez-vous modifier les infos de votre personnage?O/N");
+            String response = askPlayerString("Voulez-vous modifier les infos de votre personnage? O/N ");
             if (response.equalsIgnoreCase("o")) {
                 return true;
             } else if (response.equalsIgnoreCase("n")) {
