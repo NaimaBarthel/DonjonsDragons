@@ -1,0 +1,157 @@
+@startuml DonjonsDragons_ClassDiagram
+
+'=== Configuration ===
+skinparam monochrome true
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+left to right direction
+
+'=== Classes ===
+
+class Main {
+  + static void main()
+}
+
+class Game {
+  - NUM_TYPE_PLAYER: int (static final)
+  - menu: Menu
+  - dice: Dice
+  - board: Board
+  - player: Character
+  - scanner: Scanner
+  
+  + Game()
+  + getPlayer(): Character
+  + start()
+  - playTurn()
+  - playGame()
+  - createPlayer()
+  + displayPlayer()
+  + displayPlayerOnBoard(int)
+  + modifyPlayer()
+}
+
+class Menu {
+  - INSTANCE: Menu (static final, Singleton)
+  - scanner: Scanner
+  
+  - Menu()
+  + static getInstance(): Menu
+  + intro()
+  + askToStartAGame(): boolean
+  + askToReStartAGame(): boolean
+  + askPlayerTypeInt(String): int
+  + askPlayerString(String): String
+  + askModifyCharacter(): boolean
+}
+
+class Dice {
+  - random: Random
+  
+  + Dice()
+  + roll(): int
+}
+
+class Board {
+  + SIZE: int (static final = 64)
+  - cells: Cell[]
+  
+  + Board()
+  + isFinished(int): boolean
+}
+
+record Cell {
+  + index: int
+  
+  + Cell(int)
+  + index(): int
+}
+
+abstract class Character {
+  - name: String
+  - levelLife: int
+  - levelAttack: int
+  - offensiveEquip: OffensiveEquipment
+  - position: int
+  
+  + Character(String, int, int, OffensiveEquipment, int)
+  + getName(): String
+  + setName(String)
+  + getPosition(): int
+  + setPosition(int)
+  + getLevelLife(): int
+  + setLevelLife(int)
+  + getLevelAttack(): int
+  + setLevelAttack(int)
+  + getOffensiveEquip(): OffensiveEquipment
+  + setOffensiveEquip(OffensiveEquipment)
+  + toString(): String
+}
+
+class Warrior {
+  # type: String (final = "WARRIOR")
+  
+  + Warrior(String)
+  + toString(): String
+}
+
+class Wizard {
+  # type: String (final = "WIZARD")
+  
+  + Wizard(String)
+  + toString(): String
+}
+
+class OffensiveEquipment {
+  - type: String
+  - attackLevel: int
+  - name: String
+  
+  + OffensiveEquipment(String, int, String)
+  + getType(): String
+  + setType(String)
+  + getAttackLevel(): int
+  + setAttackLevel(int)
+  + getName(): String
+  + setName(String)
+  + toString(): String
+}
+
+class DefensiveEquipment {
+  - type: String
+  - defenseLevel: int
+  - name: String
+  
+  + DefensiveEquipment(String, int, String)
+  + getType(): String
+  + setType(String)
+  + getDefenseLevel(): int
+  + setDefenseLevel(int)
+  + getName(): String
+  + setName(String)
+  + toString(): String
+}
+
+'=== Relationships ===
+
+' Inheritance
+Character <|-- Warrior
+Character <|-- Wizard
+
+' Associations
+Game o-- Menu : uses >
+Game o-- Dice : uses >
+Game o-- Board : uses >
+Game o-- Character : has >
+
+Board *-- Cell : contains [64] >
+Character o-- OffensiveEquipment : has >
+
+Main --> Game : creates >
+
+' Notes
+note top of Character::abstract class
+note right of Menu::Singleton pattern
+note right of Cell::Java record
+
+@enduml

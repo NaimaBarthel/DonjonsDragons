@@ -1,4 +1,4 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Character;
 
 public class Warrior extends Character {
     protected final String type = "WARRIOR";

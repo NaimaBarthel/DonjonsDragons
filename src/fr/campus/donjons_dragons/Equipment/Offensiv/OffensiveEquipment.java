@@ -1,6 +1,9 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Equipment.Offensiv;
 
-public class OffensiveEquipment {
+/**
+ * Classe abstraite pour les équipements offensifs.
+ */
+public abstract class OffensiveEquipment {
     //Attributes
     private String type;  //"Weapon"  or  "Spell"
     private int attackLevel;  //Level of Attack
@@ -34,7 +37,6 @@ public class OffensiveEquipment {
 
     /**
      * Setter du type de l'équipement offensif
-     *
      * @param offensiveEquip une chaine de caractère
      * @return
      */
@@ -44,7 +46,6 @@ public class OffensiveEquipment {
 
     /**
      * Getter du niveau d'attaque de l'équipement offensif
-     *
      * @param :
      * @return un entier: le niveau d'attaque de l'équipement offensif
      */
@@ -55,7 +56,6 @@ public class OffensiveEquipment {
 
     /**
      * Setter du niveau d'attaque de l'équipement offensif
-     *
      * @param attackLevel une chaine de caractère
      * @return
      */
@@ -65,7 +65,6 @@ public class OffensiveEquipment {
 
     /**
      * Getter du nom de l'équipement offensif
-     *
      * @param :
      * @return une chaine de character: le nom de l'équipement offensif
      */
@@ -75,7 +74,6 @@ public class OffensiveEquipment {
 
     /**
      * Setter du nom de l'équipement offensif
-     *
      * @param name une chaine de caractère
      * @return
      */
@@ -85,10 +83,8 @@ public class OffensiveEquipment {
 
 
     //toString  méthode pour afficher les informations de l'équipememnt d'attaque
-
     /**
      * Méthode toString qui affiche l' objet OffensiveEquipment
-     *
      * @param
      * @return une chaine de caractères
      */

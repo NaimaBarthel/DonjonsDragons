@@ -1,8 +1,8 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Game;
 
 import java.util.Scanner;
 
-import static fr.campus.donjons_dragons.Game.NUM_TYPE_PLAYER;
+import static fr.campus.donjons_dragons.Game.Game.NUM_TYPE_PLAYER;
 
 
 public class Menu {

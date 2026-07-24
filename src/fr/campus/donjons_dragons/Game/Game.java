@@ -1,4 +1,8 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Game;
+
+import fr.campus.donjons_dragons.Character.Character;
+import fr.campus.donjons_dragons.Character.Warrior;
+import fr.campus.donjons_dragons.Character.Wizard;
 
 import java.util.Scanner;
 
@@ -12,7 +16,7 @@ public class Game {
     private final Dice dice = new Dice();
     private final Board board = new Board();
     private final Scanner scanner = new Scanner(System.in);
-    private Character player;
+    private fr.campus.donjons_dragons.Character.Character player;
 
     /**
      * Constructeur

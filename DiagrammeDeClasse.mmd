@@ -1,0 +1,149 @@
+```mermaid
+classDiagram
+    %% Configuration
+    direction LR
+    
+    %% Classes
+    class Main {
+        +main() void
+    }
+    
+    class Game {
+        -NUM_TYPE_PLAYER: int
+        -menu: Menu
+        -dice: Dice
+        -board: Board
+        -player: Character
+        -scanner: Scanner
+        
+        +Game()
+        +getPlayer() Character
+        +start()
+        -playTurn()
+        -playGame()
+        -createPlayer()
+        +displayPlayer()
+        +displayPlayerOnBoard(int)
+        +modifyPlayer()
+    }
+    
+    class Menu {
+        -INSTANCE: Menu
+        -scanner: Scanner
+        
+        -Menu()
+        +getInstance() Menu
+        +intro()
+        +askToStartAGame() boolean
+        +askToReStartAGame() boolean
+        +askPlayerTypeInt(String) int
+        +askPlayerString(String) String
+        +askModifyCharacter() boolean
+    }
+    
+    class Dice {
+        -random: Random
+        
+        +Dice()
+        +roll() int
+    }
+    
+    class Board {
+        +SIZE: int
+        -cells: Cell[]
+        
+        +Board()
+        +isFinished(int) boolean
+    }
+    
+    class Cell {
+        +index: int
+        
+        +Cell(int)
+        +index() int
+    }
+    
+    class Character {
+        <<abstract>>
+        -name: String
+        -levelLife: int
+        -levelAttack: int
+        -offensiveEquip: OffensiveEquipment
+        -position: int
+        
+        +Character(String, int, int, OffensiveEquipment, int)
+        +getName() String
+        +setName(String)
+        +getPosition() int
+        +setPosition(int)
+        +getLevelLife() int
+        +setLevelLife(int)
+        +getLevelAttack() int
+        +setLevelAttack(int)
+        +getOffensiveEquip() OffensiveEquipment
+        +setOffensiveEquip(OffensiveEquipment)
+        +toString() String
+    }
+    
+    class Warrior {
+        #type: String
+        
+        +Warrior(String)
+        +toString() String
+    }
+    
+    class Wizard {
+        #type: String
+        
+        +Wizard(String)
+        +toString() String
+    }
+    
+    class OffensiveEquipment {
+        -type: String
+        -attackLevel: int
+        -name: String
+        
+        +OffensiveEquipment(String, int, String)
+        +getType() String
+        +setType(String)
+        +getAttackLevel() int
+        +setAttackLevel(int)
+        +getName() String
+        +setName(String)
+        +toString() String
+    }
+    
+    class DefensiveEquipment {
+        -type: String
+        -defenseLevel: int
+        -name: String
+        
+        +DefensiveEquipment(String, int, String)
+        +getType() String
+        +setType(String)
+        +getDefenseLevel() int
+        +setDefenseLevel(int)
+        +getName() String
+        +setName(String)
+        +toString() String
+    }
+    
+    %% Relationships
+    Main --> Game : creates
+    Game o-- Menu : uses
+    Game o-- Dice : uses
+    Game o-- Board : uses
+    Game o-- Character : has
+    
+    Board *-- Cell : contains [64]
+    Character o-- OffensiveEquipment : has
+    
+    Character <|-- Warrior : inherits
+    Character <|-- Wizard : inherits
+    
+    %% Notes
+    note for Menu "Singleton pattern"
+    note for Character "abstract class"
+    note for Cell "Java record"
+```

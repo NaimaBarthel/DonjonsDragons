@@ -1,4 +1,4 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Game;
 
 /**
  * Classe Cell représente une case du plateau

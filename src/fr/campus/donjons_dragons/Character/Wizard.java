@@ -1,4 +1,4 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Character;
 
 public class Wizard extends Character {
     protected final String type = "WIZARD";

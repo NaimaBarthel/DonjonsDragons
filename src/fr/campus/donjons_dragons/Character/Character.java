@@ -1,4 +1,6 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Character;
+
+import fr.campus.donjons_dragons.Equipment.Offensiv.OffensiveEquipment;
 
 public abstract class Character {
 
@@ -85,7 +87,7 @@ public abstract class Character {
     /**
      * Setter du niveau de vie du personnage
      *
-     * @param leveLife un entier
+     * @param levelLife un entier
      * @return
      */
     public void setLevelLife(int levelLife) {

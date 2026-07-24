@@ -1,4 +1,4 @@
-package fr.campus.donjons_dragons;
+package fr.campus.donjons_dragons.Game;
 
 /**
  * Classe Board qui représente le plateau de jeu de 64 cases
