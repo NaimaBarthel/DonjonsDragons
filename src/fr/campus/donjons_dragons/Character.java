@@ -15,13 +15,13 @@ public abstract class Character {
     /**
      * Constructeur de l'objet Character
      *
-     * @param name le nom du personnage, leveLife
+     * @param name le nom du personnage, levelLife
      * @return une instance de Character
      */
-    public Character(String name, int leveLife, int levelAttack, OffensiveEquipment offensiveEquip, int position) {
+    public Character(String name, int levelLife, int levelAttack, OffensiveEquipment offensiveEquip, int position) {
         //this.typeCharacter = typeChar;
         this.name = name;
-        this.levelLife = leveLife;
+        this.levelLife = levelLife;
         this.levelAttack = levelAttack;
         this.offensiveEquip = offensiveEquip;
         this.position = position;
@@ -41,6 +41,16 @@ public abstract class Character {
     }
 
     /**
+     * Setter du nom du personnage
+     *
+     * @param :name une chaine de caractère
+     * @return
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
      * Getter de la position du joueur sur le plateau
      *
      * @param :
@@ -50,7 +60,15 @@ public abstract class Character {
         return position;
     }
 
-
+    /**
+     * Setter de la position du joueur sur le plateau
+     *
+     * @param position un entier représentant la case où on place le joueur
+     * @return
+     */
+    public void setPosition(int position) {
+        this.position = position;
+    }
 
     /**
      * Getter du niveau de vie du personnage
@@ -62,7 +80,22 @@ public abstract class Character {
         return levelLife;
     }
 
+    //Setters
 
+    /**
+     * Setter du niveau de vie du personnage
+     *
+     * @param leveLife un entier
+     * @return
+     */
+    public void setLevelLife(int levelLife) {
+        //verify to avoid negative points
+        if (levelLife >= 0) {
+            this.levelLife = levelLife;
+        } else {
+            this.levelLife = 0;  // if < 0, =0
+        }
+    }
 
     /**
      * Getter du niveau d'attaque du personnage
@@ -73,42 +106,6 @@ public abstract class Character {
     public int getLevelAttack() {
         return levelAttack;
     }
-
-    /**
-     * Getter de l'équipement offensif du personnage
-     *
-     * @param
-     * @return un objet de type OffensiveEquipment
-     */
-    public OffensiveEquipment getOffensiveEquip() {
-        return offensiveEquip;
-    }
-
-    //Setters
-    /**
-     * Setter du nom du personnage
-     *
-     * @param :name une chaine de caractère
-     * @return
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-    /**
-     * Setter du niveau de vie du personnage
-     *
-     * @param leveLife un entier
-     * @return
-     */
-    public void setLevelLife(int leveLife) {
-        //verify to avoid negative points
-        if (leveLife >= 0) {
-            this.levelLife = leveLife;
-        } else {
-            this.levelLife = 0;  // if < 0, =0
-        }
-    }
-
 
     /**
      * Setter du niveau d'attaque du personnage
@@ -125,7 +122,15 @@ public abstract class Character {
         }
     }
 
-
+    /**
+     * Getter de l'équipement offensif du personnage
+     *
+     * @param
+     * @return un objet de type OffensiveEquipment
+     */
+    public OffensiveEquipment getOffensiveEquip() {
+        return offensiveEquip;
+    }
 
     /**
      * Setter de l'équipement offensif du joueur
@@ -135,16 +140,6 @@ public abstract class Character {
      */
     public void setOffensiveEquip(OffensiveEquipment offensiveEquip) {
         this.offensiveEquip = offensiveEquip;
-    }
-
-    /**
-     * Setter de la position du joueur sur le plateau
-     *
-     * @param position un entier représentant la case où on place le joueur
-     * @return
-     */
-    public void setPosition(int position){
-        this.position = position;
     }
 
 
@@ -158,8 +153,8 @@ public abstract class Character {
      */
     @Override
     public String toString() {
-        return String.format("Character [ Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s]",
-                name, levelLife, levelAttack, offensiveEquip);
+        return String.format("Character [ Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, position; %d]",
+                name, levelLife, levelAttack, offensiveEquip, position);
     }
 
 

@@ -14,7 +14,7 @@ public class Menu {
      * Scanner utilisé pour lire les entrées de l'utilisateur.
      * Initialisé avec {@code System.in} pour une lecture depuis la console.
      */
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     /**
      * Constructeur privé pour empêcher l'instanciation externe.
@@ -44,15 +44,35 @@ public class Menu {
     }
 
     /**
-     * Demande à l'utilisateur s'il veut modifier les informations (nom ou type) de son personnage
+     * Demande à l'utilisateur s'il veut démarrer une partie
      *
      * @param
-     * @return booléen vrai s'il veut modifier des infos , faux s'il ne veut rien changer
+     * @return booléen vrai si oui, faux sinon
      *
      */
     public boolean askToStartAGame() {
         while (true) {
             String response = askPlayerString("Voulez-vous démarrer une partie? O/N ");
+            if (response.equalsIgnoreCase("o")) {
+                return true;
+            } else if (response.equalsIgnoreCase("n")) {
+                return false;
+            } else {
+                System.out.println("Erreur: veuillez saisir 'O' ou 'N'.");
+            }
+        }
+    }
+
+    /**
+     * Demande à l'utilisateur s'il veut redémarrer une partie
+     *
+     * @param
+     * @return booléen vrai si oui, faux sinon
+     *
+     */
+    public boolean askToReStartAGame() {
+        while (true) {
+            String response = askPlayerString("Voulez-vous redémarrer une partie? O/N ");
             if (response.equalsIgnoreCase("o")) {
                 return true;
             } else if (response.equalsIgnoreCase("n")) {
