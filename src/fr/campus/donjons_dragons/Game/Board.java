@@ -2,6 +2,7 @@ package fr.campus.donjons_dragons.Game;
 
 import fr.campus.donjons_dragons.Main;
 import fr.campus.donjons_dragons.OutOfBoardException;
+import java.util.ArrayList;
 
 /**
  * Classe Board qui représente le plateau de jeu de 64 cases
@@ -9,16 +10,19 @@ import fr.campus.donjons_dragons.OutOfBoardException;
 public class Board {
     //Attributes
     public static final int SIZE = 64;   //Taille fixe du tableau
-    private final Cell[] cells;  //Tableau de 64 case
+   // private final Cell[] cells;  //Tableau de 64 case
+    private final ArrayList<Cell> cells;
 
     /**
      * Constructeur
      * où on initialise le plateau avec 64 cases(cellules)
      */
     public Board() {
-        cells = new Cell[SIZE];
+        //cells = new Cell[SIZE];
+        cells = new ArrayList<Cell>();
         for (int i = 0; i < SIZE; i++) {
-            cells[i] = new Cell(i + 1);
+            //cells[i] = new Cell(i + 1);
+            cells.add(new EmptyCell(i+1));
         }
     }
 

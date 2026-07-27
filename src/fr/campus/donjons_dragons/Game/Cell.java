@@ -3,27 +3,34 @@ package fr.campus.donjons_dragons.Game;
 /**
  * Classe Cell représente une case du plateau
  *
- * @param index position de la case (1 à 64)
  */
-public record Cell(int index) {
+public abstract class Cell{
+    private int position;   //position de la case (de 1 à 64)
     /**
      * Constructeur d'une cellule
-     *
-     * @param index entier qui représente une case du plateau
+     * @param position entier qui représente une case du plateau
      */
-    public Cell {
+    public Cell(int position) {
+        this.position = position;
     }
 
     /**
-     * Getter de l'index
+     * Getter de la position : retourne la position de la case
      *
      * @param
      * @return un entier: le numéro de case de la cellule
      */
-    @Override
-    public int index() {
-        return index;
+     public int getPosition() {
+        return position;
     }
+
+    /**
+     * Méthode toString qui affiche le numéro de la case
+     *
+     * @param
+     * @return une chaine de caractères
+     */
+     public abstract String toString();
 
 
 }

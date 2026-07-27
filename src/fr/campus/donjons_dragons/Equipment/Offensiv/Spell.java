@@ -1,5 +1,4 @@
 package fr.campus.donjons_dragons.Equipment.Offensiv;
-
 /**
  * classe représentant un sort (spécifique aux Magiciens).
  * Hérite de OffensiveEquipment.
