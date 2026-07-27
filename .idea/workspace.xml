@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="partie 2.3 Plateau de jeu et déplacement joueur 24/07/2026">
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/DefensiveEquipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/Potion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/Shield.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Offensiv/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Offensiv/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OutOfBoardException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/DefensiveEquipment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/OffensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Offensiv/OffensiveEquipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,62 +46,65 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000417335" />
-      <entry key="MS500" value="1.0083964779129335" />
-      <entry key="S2" value="1.3027199548749855" />
-      <entry key="S5" value="1.637198255778345" />
-      <entry key="S10" value="2.0080129872481516" />
-      <entry key="S30" value="3.4310372638701483" />
-      <entry key="S60" value="4.9574650501599535" />
-      <entry key="M2" value="6.946486658469609" />
-      <entry key="M5" value="11.124523555711491" />
-      <entry key="M10" value="16.101772379647123" />
-      <entry key="M15" value="20.309573678022016" />
-      <entry key="M30" value="31.774940196462687" />
-      <entry key="H1" value="52.93518645186463" />
-      <entry key="H2" value="97.90487829832293" />
-      <entry key="H4" value="179.73850798683748" />
-      <entry key="D1" value="624.0704615451903" />
-      <entry key="W1" value="1089.1611976945878" />
+      <entry key="MS100" value="1.0319869727722734E-8" />
+      <entry key="MS500" value="0.025277542136304343" />
+      <entry key="S2" value="0.3987344051407488" />
+      <entry key="S5" value="0.6922673860882265" />
+      <entry key="S10" value="0.8330891555642737" />
+      <entry key="S30" value="1.101016902600239" />
+      <entry key="S60" value="1.5483705344771375" />
+      <entry key="M2" value="2.2087728241429265" />
+      <entry key="M5" value="4.006106305493705" />
+      <entry key="M10" value="7.2030267856652" />
+      <entry key="M15" value="10.930295314626827" />
+      <entry key="M30" value="24.587514350398962" />
+      <entry key="H1" value="52.33773093848462" />
+      <entry key="H2" value="103.04415068354376" />
+      <entry key="H4" value="191.23369244386382" />
+      <entry key="D1" value="660.9685166560546" />
+      <entry key="W1" value="1150.94644305" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.19679339301063E-104" />
-      <entry key="S5" value="5.210348909054269E-42" />
-      <entry key="S10" value="2.282618870739105E-21" />
-      <entry key="S30" value="1.316673163135114E-7" />
-      <entry key="S60" value="3.6309516559375466E-4" />
-      <entry key="M2" value="0.019539901692417733" />
-      <entry key="M5" value="0.2648191856356799" />
-      <entry key="M10" value="0.8997695345284991" />
-      <entry key="M15" value="1.6576550964235433" />
-      <entry key="M30" value="4.013543096487608" />
-      <entry key="H1" value="7.913159937829048" />
-      <entry key="H2" value="14.550868587926365" />
-      <entry key="H4" value="25.330683093947858" />
-      <entry key="D1" value="92.95780669841184" />
-      <entry key="W1" value="174.61359814319192" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000000009" />
+      <entry key="S5" value="1.0000009431561627" />
+      <entry key="S10" value="1.0009711622740949" />
+      <entry key="S30" value="1.0990294292566827" />
+      <entry key="S60" value="1.3150517845397351" />
+      <entry key="M2" value="1.5911402646322568" />
+      <entry key="M5" value="2.323334427294621" />
+      <entry key="M10" value="3.581379486853772" />
+      <entry key="M15" value="4.680405610101852" />
+      <entry key="M30" value="7.429968451501855" />
+      <entry key="H1" value="12.044172736006155" />
+      <entry key="H2" value="19.753546175538773" />
+      <entry key="H4" value="31.92610855372495" />
+      <entry key="D1" value="103.01598294692933" />
+      <entry key="W1" value="188.29834338144306" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.00575886413161595" />
-      <entry key="MS500" value="0.3608647860688671" />
-      <entry key="S2" value="1.0296551486992584" />
-      <entry key="S5" value="1.4951735422990917" />
-      <entry key="S10" value="1.8996554343251717" />
-      <entry key="S30" value="3.3263208810492766" />
-      <entry key="S60" value="4.866076678315104" />
-      <entry key="M2" value="6.892703008033723" />
-      <entry key="M5" value="11.336489645428742" />
-      <entry key="M10" value="16.96121068178264" />
-      <entry key="M15" value="21.93283817561313" />
-      <entry key="M30" value="35.76241081493563" />
-      <entry key="H1" value="60.82793012484998" />
-      <entry key="H2" value="112.4364483424336" />
-      <entry key="H4" value="205.05036768731466" />
-      <entry key="D1" value="717.0167623122803" />
-      <entry key="W1" value="1263.7719343007261" />
+      <entry key="MS100" value="1.297221465500207E-8" />
+      <entry key="MS500" value="0.027286545198221074" />
+      <entry key="S2" value="0.5728376603209369" />
+      <entry key="S5" value="1.1871247117686716" />
+      <entry key="S10" value="1.5366013885876841" />
+      <entry key="S30" value="2.061735042420071" />
+      <entry key="S60" value="2.7580606608071845" />
+      <entry key="M2" value="3.7238152253581918" />
+      <entry key="M5" value="6.282330713608034" />
+      <entry key="M10" value="10.750231625667567" />
+      <entry key="M15" value="15.580892656884204" />
+      <entry key="M30" value="31.990877273689687" />
+      <entry key="H1" value="64.35758308774342" />
+      <entry key="H2" value="122.77543010306213" />
+      <entry key="H4" value="223.13915602766147" />
+      <entry key="D1" value="763.9722870530785" />
+      <entry key="W1" value="1339.2417588717965" />
     </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

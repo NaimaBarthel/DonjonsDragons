@@ -3,6 +3,7 @@ package fr.campus.donjons_dragons.Game;
 import fr.campus.donjons_dragons.Character.Character;
 import fr.campus.donjons_dragons.Character.Warrior;
 import fr.campus.donjons_dragons.Character.Wizard;
+import fr.campus.donjons_dragons.OutOfBoardException;
 
 import java.util.Scanner;
 
@@ -81,9 +82,19 @@ public class Game {
         if (board.isFinished(newPosition))    //Si arrivé à, ou dépassé 64 (SIZE), on se place à l'arrivée (SIZE)
             newPosition = Board.SIZE;   //arrivée à 64
 
-        player.setPosition(newPosition);  //déplacer joueur
-        System.out.print("Lancé de dé = " + roll + ".");  //affichage du lancé
-        displayPlayerOnBoard(newPosition);  //Affichage position joueur
+        try {
+            System.out.print("Lancé de dé = " + roll + ".");  //affichage du lancé
+            board.checkPosition(newPosition);  //vérification si hors plateau
+            player.setPosition(newPosition);  //déplacer joueur
+
+            displayPlayerOnBoard(newPosition);  //Affichage position joueur
+        } catch ( OutOfBoardException e){
+            //Code exécuté si l'exception est levée
+            System.out.print("Erreur Exception OutOfBoardException levée : " + e.getMessage());   //Message d'erreur si exception levée
+            displayPlayerOnBoard(player.getPosition());   //affichage du joueur dans sa dernière position avant de sortir du plateau
+        }
+
+
     }
 
     /**

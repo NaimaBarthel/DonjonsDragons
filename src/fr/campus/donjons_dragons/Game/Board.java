@@ -1,5 +1,8 @@
 package fr.campus.donjons_dragons.Game;
 
+import fr.campus.donjons_dragons.Main;
+import fr.campus.donjons_dragons.OutOfBoardException;
+
 /**
  * Classe Board qui représente le plateau de jeu de 64 cases
  */
@@ -23,9 +26,24 @@ public class Board {
      * Méthode qui permet de savoir si la partie est finie ou non
      *
      * @param position un entier représentant la position du joueur
-     * @return booléen vrai si le joueur est sur la case 64 (= SIZE) ou l'a dépassée
+     * @return booléen vrai si le joueur est sur la case 64 (= SIZE)
      */
     public boolean isFinished(int position) {
-        return position >= SIZE;
+        return position == SIZE;
     }
+
+
+    /**
+     * Méthode qui vérifie si la position du joueur est <= SIZE
+     *
+     * @param position un entier représentant la position du joueur
+     * @throws OutOfBoardException si la position dépasse SIZE
+     */
+    public void checkPosition( int position) throws OutOfBoardException {
+        if (position > SIZE  ) {
+              throw new OutOfBoardException("Position " + position + " > " + SIZE + ". ");
+
+        }
+    }
+
 }

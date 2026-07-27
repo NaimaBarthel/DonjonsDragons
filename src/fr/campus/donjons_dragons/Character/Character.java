@@ -159,5 +159,4 @@ public abstract class Character {
                 name, levelLife, levelAttack, offensiveEquip, position);
     }
 
-
 }
