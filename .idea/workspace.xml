@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="partie 2.3 Plateau de jeu et déplacement joueur 24/07/2026">
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EmptyCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EnemyCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/SpellCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/WeaponCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Offensiv/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Offensiv/Spell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EmptyCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EmptyCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EnemyCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/EnemyCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/SpellCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/PotionCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/WeaponCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/WeaponCell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,57 +53,57 @@
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.000000000001342" />
-      <entry key="S30" value="1.0001772048107884" />
-      <entry key="S60" value="1.0215046233885305" />
-      <entry key="M2" value="1.3278486351925176" />
-      <entry key="M5" value="3.864618787494527" />
-      <entry key="M10" value="8.355166385693739" />
-      <entry key="M15" value="11.597269292334603" />
-      <entry key="M30" value="19.352745307634226" />
-      <entry key="H1" value="41.204275044035604" />
-      <entry key="H2" value="96.67382983489479" />
-      <entry key="H4" value="200.67341261574947" />
-      <entry key="D1" value="737.864697974531" />
-      <entry key="W1" value="1288.3487808903549" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000027875313" />
+      <entry key="M2" value="1.0000571253603734" />
+      <entry key="M5" value="1.0596376485974872" />
+      <entry key="M10" value="2.2863286421357243" />
+      <entry key="M15" value="5.2039263914062595" />
+      <entry key="M30" value="16.316307482067085" />
+      <entry key="H1" value="31.585338122357125" />
+      <entry key="H2" value="45.12526408299377" />
+      <entry key="H4" value="67.2733956905935" />
+      <entry key="D1" value="573.3706803714459" />
+      <entry key="W1" value="1379.4864195123262" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.2584480517035418E-144" />
-      <entry key="S5" value="2.7538109157740862E-58" />
-      <entry key="S10" value="1.6594610317130332E-29" />
-      <entry key="S30" value="2.550678292923431E-10" />
-      <entry key="S60" value="1.59709445120138E-5" />
-      <entry key="M2" value="0.004006424145150272" />
-      <entry key="M5" value="0.11984959348934697" />
-      <entry key="M10" value="0.4354288422803316" />
-      <entry key="M15" value="0.7373391030998883" />
-      <entry key="M30" value="1.7376865719427503" />
-      <entry key="H1" value="4.4800715840800045" />
-      <entry key="H2" value="11.308495808800183" />
-      <entry key="H4" value="24.564708591558897" />
-      <entry key="D1" value="102.7304109501253" />
-      <entry key="W1" value="196.28407398772976" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.2665313844730923E-149" />
+      <entry key="S10" value="4.760829789720962E-75" />
+      <entry key="S30" value="1.7092151905212553E-25" />
+      <entry key="S60" value="4.620703751580643E-13" />
+      <entry key="M2" value="8.682909176832704E-7" />
+      <entry key="M5" value="0.005621002002289584" />
+      <entry key="M10" value="0.12543306618319724" />
+      <entry key="M15" value="0.4086605455512474" />
+      <entry key="M30" value="1.5507341786903495" />
+      <entry key="H1" value="3.2266111811904232" />
+      <entry key="H2" value="4.748478508766346" />
+      <entry key="H4" value="6.763512148649711" />
+      <entry key="D1" value="67.1928806595249" />
+      <entry key="W1" value="188.9179363894507" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.209591327600926E-12" />
-      <entry key="MS500" value="0.006206518750750817" />
-      <entry key="S2" value="0.2806803555184021" />
-      <entry key="S5" value="0.6015681121708066" />
-      <entry key="S10" value="0.7756082208001412" />
-      <entry key="S30" value="0.9189587447424248" />
-      <entry key="S60" value="0.9797092359817816" />
-      <entry key="M2" value="1.3067751613420435" />
-      <entry key="M5" value="3.9583145295611986" />
-      <entry key="M10" value="8.763572163935331" />
-      <entry key="M15" value="12.310222924123185" />
-      <entry key="M30" value="21.072085133723018" />
-      <entry key="H1" value="45.66943224312652" />
-      <entry key="H2" value="107.96744841839373" />
-      <entry key="H4" value="225.22201471645545" />
-      <entry key="D1" value="840.5830738528313" />
-      <entry key="W1" value="1484.6297128601195" />
+      <entry key="MS100" value="3.155158277923562E-4" />
+      <entry key="MS500" value="0.19943630995225822" />
+      <entry key="S2" value="0.6682686033148498" />
+      <entry key="S5" value="0.851099671731626" />
+      <entry key="S10" value="0.9225506336953143" />
+      <entry key="S30" value="0.9734868076751041" />
+      <entry key="S60" value="0.9866543534028238" />
+      <entry key="M2" value="0.9933622632238814" />
+      <entry key="M5" value="1.0622658893024786" />
+      <entry key="M10" value="2.4069356496065497" />
+      <entry key="M15" value="5.604211712702776" />
+      <entry key="M30" value="17.853230426188563" />
+      <entry key="H1" value="34.79850045146664" />
+      <entry key="H2" value="49.864188048931595" />
+      <entry key="H4" value="74.03054412420117" />
+      <entry key="D1" value="640.5553683097513" />
+      <entry key="W1" value="1568.4012790061358" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -136,7 +137,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "editing.templates",
     "settings.editor.splitter.proportion": "0.18658893",
     "to.speed.mode.migration.done": "true"
   }

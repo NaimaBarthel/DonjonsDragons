@@ -10,7 +10,6 @@ package fr.campus.donjons_dragons.Game;
 public class EnemyCell extends Cell{
     /**
      * Constructeur d'une case ennemi
-     *
      * @param position entier qui représente la position de la case sur le plateau
      */
     public EnemyCell(int position){
@@ -18,9 +17,7 @@ public class EnemyCell extends Cell{
     }
 
     /**
-     * Méthode toString qui affiche une case vide
-     *
-     * @param
+     * Méthode toString qui affiche une case ennemi
      * @return une chaine de character
      */
     @Override

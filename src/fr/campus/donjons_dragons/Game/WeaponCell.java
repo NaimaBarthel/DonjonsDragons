@@ -18,14 +18,12 @@ public class WeaponCell extends Cell{
     }
 
     /**
-     * Méthode toString qui affiche une case vide
-     *
-     * @param
+     * Méthode toString qui affiche une case Arme
      * @return une chaine de character
      */
     @Override
     public String toString(){
-        return String.format("Case  %d : Arme",getPosition());
+        return String.format("Case %d : Arme",getPosition());
     }
 
 }

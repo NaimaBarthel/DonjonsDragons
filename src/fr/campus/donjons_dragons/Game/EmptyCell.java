@@ -19,13 +19,11 @@ public class EmptyCell extends Cell {
 
     /**
      * Méthode toString qui affiche une case vide
-     *
-     * @param
      * @return une chaine de character
      */
     @Override
     public String toString(){
-        return String.format("Case  %d : vide",getPosition());
+        return String.format("Case %d : vide",getPosition());
     }
 
 }

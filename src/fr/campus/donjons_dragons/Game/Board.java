@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Board {
     //Attributes
-    public static final int SIZE = 64;   //Taille fixe du tableau
+    public static final int SIZE = 4;   //Taille fixe du tableau
    // private final Cell[] cells;  //Tableau de 64 case
     private final ArrayList<Cell> cells;
 
@@ -17,13 +17,30 @@ public class Board {
      * Constructeur
      * où on initialise le plateau avec 64 cases(cellules)
      */
-    public Board() {
+    /*public Board() {
         //cells = new Cell[SIZE];
         cells = new ArrayList<Cell>();
         for (int i = 0; i < SIZE; i++) {
             //cells[i] = new Cell(i + 1);
             cells.add(new EmptyCell(i+1));
         }
+    }*/
+    //Création d'un Board provisoire avec 4 types de cases: vide, ennemi, arme et potion
+    public Board(){
+        cells = new ArrayList<>();
+        cells.add(new EmptyCell(1));
+        cells.add(new EnemyCell(2));
+        cells.add(new WeaponCell(3));
+        cells.add(new PotionCell(4));
+    }
+
+    /**
+     * Méthode qui permet de savoir quel type de case il y a à la case position
+     * @param position un entier représentant une position
+     * @return un objet Cell :la case se trouvant à la case position
+     */
+    public Cell getCell(int position){
+        return cells.get(position-1);
     }
 
     /**
@@ -39,7 +56,6 @@ public class Board {
 
     /**
      * Méthode qui vérifie si la position du joueur est <= SIZE
-     *
      * @param position un entier représentant la position du joueur
      * @throws OutOfBoardException si la position dépasse SIZE
      */

@@ -14,10 +14,8 @@ public abstract class Cell{
         this.position = position;
     }
 
-    /**
+     /**
      * Getter de la position : retourne la position de la case
-     *
-     * @param
      * @return un entier: le numéro de case de la cellule
      */
      public int getPosition() {
@@ -26,8 +24,6 @@ public abstract class Cell{
 
     /**
      * Méthode toString qui affiche le numéro de la case
-     *
-     * @param
      * @return une chaine de caractères
      */
      public abstract String toString();

@@ -76,7 +76,7 @@ public class Game {
         System.out.println("Pour lancer le dé appuyer sur la touche Entrée...");
         scanner.nextLine();  //Attend appui Entrée
 
-        int roll = dice.roll();  //lancé de dés
+        int roll = dice.roll(1);  //lancé de dés
         int newPosition = roll + player.getPosition();
 
         if (board.isFinished(newPosition))    //Si arrivé à, ou dépassé 64 (SIZE), on se place à l'arrivée (SIZE)
@@ -86,7 +86,6 @@ public class Game {
             System.out.print("Lancé de dé = " + roll + ".");  //affichage du lancé
             board.checkPosition(newPosition);  //vérification si hors plateau
             player.setPosition(newPosition);  //déplacer joueur
-
             displayPlayerOnBoard(newPosition);  //Affichage position joueur
         } catch ( OutOfBoardException e){
             //Code exécuté si l'exception est levée
@@ -160,12 +159,10 @@ public class Game {
 
     /**
      * Méthode qui permet d'afficher le personnage
-     *
      */
     public void displayPlayerOnBoard(int position) {
-        System.out.println("Position joueur " + player.getName() + " : " + position + "/" + Board.SIZE);
+        System.out.println("Position joueur " + player.getName() + " : " + position + "/" + Board.SIZE + " sur " + board.getCell(position));
     }
-
 
     /**
      * Méthode qui permet de modifier un personnage

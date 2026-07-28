@@ -12,11 +12,11 @@ public class Dice {
 
     /**
      * méthode représentant le lancé du dé
-     *
+     * @param pipe entier qui représente l'entier max que le dé peut lancer
      * @return un entier de 1 à 6
      */
-    public int roll() {
-        return random.nextInt(6) + 1;
+    public int roll(int pipe) {
+        return random.nextInt(pipe) + 1;
     }
 
 
