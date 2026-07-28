@@ -1,0 +1,28 @@
+CREATE DATABASE db_donjons_et_dragons;
+USE db_donjons_et_dragons;
+CREATE TABLE game_character (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(20) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    lifePoints INT NOT NULL,
+    strength INT NOT NULL,
+    offensiveEquipment VARCHAR(100),
+    defensiveEquipment VARCHAR(100)
+);
+
+INSERT INTO game_character
+(type, name, lifePoints, strength, offensiveEquipment, defensiveEquipment)
+VALUES
+('Warrior', 'Conan', 10, 10, 'Weapon', 'Shield'),
+('Wizard', 'Merlin', 6, 15, 'Spell', 'Potion');
+
+String url = "jdbc:mysql://localhost:3306/db_donjons_et_dragons";
+String user = "javauser";
+String password = "9Drag8&7Donj6!";
+
+
+CREATE USER 'javauser'@'localhost' IDENTIFIED BY 'Drag&Donj!789';
+ALTER USER 'javauser'@'localhost'
+IDENTIFIED BY '9Drag8&7Donj6!';
+GRANT ALL PRIVILEGES ON db_donjons_et_dragons.* TO 'javauser'@'localhost';
+FLUSH PRIVILEGES;

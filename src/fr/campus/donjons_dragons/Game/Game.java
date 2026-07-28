@@ -151,7 +151,6 @@ public class Game {
 
     /**
      * Méthode qui permet d'afficher le personnage
-     *
      */
     public void displayPlayer() {
         System.out.println("Mon personnage : " + this.player.toString());
