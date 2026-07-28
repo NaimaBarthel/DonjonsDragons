@@ -1,0 +1,234 @@
+@startuml
+' Diagramme de classes pour le projet Donjons & Dragons
+' Généré pour PlantUML
+' Auteur: Mistral Vibe
+
+'skinparam monochrome true
+'skinparam shadowing false
+'skinparam defaultFontName Arial
+'skinparam classAttributeIconSize 0
+
+' ==================== PACKAGES ====================
+
+package "fr.campus.donjons_dragons" {
+    class Main {
+        + main()
+    }
+
+    class OutOfBoardException {
+        + OutOfBoardException(message: String)
+    }
+}
+
+package "fr.campus.donjons_dragons.Character" {
+    abstract class Character {
+        - name: String
+        - levelLife: int
+        - levelAttack: int
+        - offensiveEquip: OffensiveEquipment
+        - position: int
+        
+        + Character(name: String, levelLife: int, levelAttack: int, offensiveEquip: OffensiveEquipment, position: int)
+        + getName(): String
+        + setName(name: String): void
+        + getLevelLife(): int
+        + setLevelLife(levelLife: int): void
+        + getLevelAttack(): int
+        + setLevelAttack(levelAttack: int): void
+        + getPosition(): int
+        + setPosition(position: int): void
+        + getOffensiveEquip(): OffensiveEquipment
+        + setOffensiveEquip(offensiveEquip: OffensiveEquipment): void
+        + toString(): String
+    }
+
+    class Warrior {
+        - type: String
+        
+        + Warrior(name: String)
+        + toString(): String
+    }
+
+    class Wizard {
+        - type: String
+        
+        + Wizard(name: String)
+        + toString(): String
+    }
+
+    Character <|-- Warrior
+    Character <|-- Wizard
+}
+
+package "fr.campus.donjons_dragons.Game" {
+    class Board {
+        - SIZE: int
+        - cells: ArrayList<Cell>
+        
+        + Board()
+        + getCell(position: int): Cell
+        + isFinished(position: int): boolean
+        + checkPosition(position: int): void
+    }
+
+    abstract class Cell {
+        - position: int
+        
+        + Cell(position: int)
+        + getPosition(): int
+        + {abstract} toString(): String
+    }
+
+    class EmptyCell {
+        + EmptyCell(position: int)
+        + toString(): String
+    }
+
+    class EnemyCell {
+        + EnemyCell(position: int)
+        + toString(): String
+    }
+
+    class WeaponCell {
+        + WeaponCell(position: int)
+        + toString(): String
+    }
+
+    class PotionCell {
+        + PotionCell(position: int)
+        + toString(): String
+    }
+
+    class Dice {
+        - random: Random
+        
+        + Dice()
+        + roll(pipe: int): int
+    }
+
+    class Game {
+        - NUM_TYPE_PLAYER: int
+        - menu: Menu
+        - dice: Dice
+        - board: Board
+        - scanner: Scanner
+        - player: Character
+        
+        + Game()
+        + start(): void
+        + getPlayer(): Character
+        + displayPlayer(): void
+        + displayPlayerOnBoard(position: int): void
+        + modifyPlayer(): void
+        - createPlayer(): void
+        - playGame(): void
+        - playTurn(): void
+    }
+
+    class Menu {
+        - INSTANCE: Menu
+        - scanner: Scanner
+        
+        - Menu()
+        + getInstance(): Menu
+        + intro(): void
+        + askToStartAGame(): boolean
+        + askToReStartAGame(): boolean
+        + askPlayerTypeInt(message: String): int
+        + askPlayerString(message: String): String
+        + askModifyCharacter(): boolean
+    }
+
+    Cell <|-- EmptyCell
+    Cell <|-- EnemyCell
+    Cell <|-- WeaponCell
+    Cell <|-- PotionCell
+}
+
+package "fr.campus.donjons_dragons.Equipment.Offensiv" {
+    abstract class OffensiveEquipment {
+        - type: String
+        - attackLevel: int
+        - name: String
+        
+        + OffensiveEquipment(offensiveEquipTyp: String, attackLevel: int, name: String)
+        + getType(): String
+        + setType(offensiveEquip: String): void
+        + getAttackLevel(): int
+        + setAttackLevel(attackLevel: int): void
+        + getName(): String
+        + setName(name: String): void
+        + toString(): String
+    }
+
+    class Weapon {
+        + Weapon(attackLevel: int, name: String)
+        + toString(): String
+    }
+
+    class Spell {
+        + Spell(attackLevel: int, name: String)
+        + toString(): String
+    }
+
+    OffensiveEquipment <|-- Weapon
+    OffensiveEquipment <|-- Spell
+}
+
+package "fr.campus.donjons_dragons.Equipment.Defensiv" {
+    abstract class DefensiveEquipment {
+        - type: String
+        - defenseLevel: int
+        - name: String
+        
+        + DefensiveEquipment(defensiveEquipTyp: String, defenseLevel: int, name: String)
+        + getType(): String
+        + setType(defensiveEquip: String): void
+        + getDefenseLevel(): int
+        + setDefenseLevel(defenseLevel: int): void
+        + getName(): String
+        + setName(name: String): void
+        + toString(): String
+    }
+
+    class Shield {
+        + Shield(defenseLevel: int, name: String)
+        + toString(): String
+    }
+
+    class Potion {
+        + Potion(defenseLevel: int, name: String)
+        + toString(): String
+    }
+
+    DefensiveEquipment <|-- Shield
+    DefensiveEquipment <|-- Potion
+}
+
+' ==================== RELATIONS ENTRE PACKAGES ====================
+
+' Character utilise OffensiveEquipment
+Character "1" o-- "1" OffensiveEquipment : utilise
+
+' Game utilise Board, Dice, Menu, Character
+Game "1" o-- "1" Board : contient
+Game "1" o-- "1" Dice : utilise
+Game "1" o-- "1" Menu : utilise
+Game "1" o-- "1" Character : contient
+
+' Board contient des Cell
+Board "1" *-- "*" Cell : contient
+
+' Menu est un Singleton
+'note right of Menu::<<Singleton>>
+
+' Game utilise OutOfBoardException
+Game ..> OutOfBoardException : lève
+
+' Character position sur Board via Cell
+Character "1" --> "1" Board : se déplace sur
+
+' Main démarre Game
+Main "1" --> "1" Game : instancie
+
+@enduml
