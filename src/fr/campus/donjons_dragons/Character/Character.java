@@ -174,8 +174,8 @@ public abstract class Character {
      */
     @Override
     public String toString() {
-        return String.format("Character [ Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, Defensive Equipment: %s, position; %d]",
-                name, levelLife, levelAttack, offensiveEquip, defensiveEquip, position);
+        return String.format("Character [ Type: %s, Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, Defensive Equipment: %s, position; %d]",
+                this.getClass().getSimpleName(), name, levelLife, levelAttack, offensiveEquip, defensiveEquip, position);
     }
 
 }

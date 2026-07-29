@@ -1,6 +1,7 @@
 package fr.campus.donjons_dragons.Character;
 
 public class Warrior extends Character {
+    /////a supprimer
     protected final String type = "WARRIOR";
 
     public Warrior(String name) {
@@ -9,9 +10,5 @@ public class Warrior extends Character {
         // this.type = typeChar;
     }
 
-    //toString  méthode pour afficher les informations du personnages
-    public String toString() {
-        return String.format("Warrior [ Type: %s, Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, Defensive Equipment: %s, position: %d]", type,
-                super.getName(), super.getLevelLife(), super.getLevelAttack(), super.getOffensiveEquip(), super.getDefensiveEquip(), super.getPosition());
-    }
+
 }

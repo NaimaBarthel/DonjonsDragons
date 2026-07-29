@@ -56,14 +56,14 @@ public class Game {
     public void start() {
         boolean running = true;
         menu.intro();
-        if (menu.askToStartAGame()) {
+        if (menu.askYesNo("Voulez-vous démarrer une partie? O/N ")) {
             while (running) {
 
                 createPlayer();
                 displayPlayer();
                 modifyPlayer();
                 playGame();
-                running = menu.askToReStartAGame();
+                running = menu.askYesNo("Voulez-vous redémarrer une partie? O/N ");
             }
             System.out.println("A bientôt!!!");
             database.close();

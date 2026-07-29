@@ -44,12 +44,34 @@ public class Menu {
     }
 
     /**
+     * méthode qui permet de demander une question à l'utilisateur
+     * et d'attendre soit une réponse oui ou non
+     * @param msg une chaine de caractères = la question posée à l'utilisateur
+     * @return booléen vrai si la réponse est oui, faux si non
+     */
+    public boolean askYesNo(String msg) {
+        while (true) {
+            String response = askPlayerString(msg);
+            if (response.equalsIgnoreCase("o")) {
+                return true;
+            } else if (response.equalsIgnoreCase("n")) {
+                return false;
+            } else {
+                System.out.println("Erreur: veuillez saisir 'O' ou 'N'.");
+            }
+        }
+    }
+
+
+    /**
+     *  méthode askToStartAGame remplacé par la méthode askYesNo(msg)
      * Demande à l'utilisateur s'il veut démarrer une partie
      *
      * @param
      * @return booléen vrai si oui, faux sinon
      *
-     */
+
+    //askYesNo
     public boolean askToStartAGame() {
         while (true) {
             String response = askPlayerString("Voulez-vous démarrer une partie? O/N ");
@@ -62,14 +84,14 @@ public class Menu {
             }
         }
     }
-
-    /**
+    //askYesNo
+    /** méthode askToReStartAGame remplacé par la méthode askYesNo(msg)
      * Demande à l'utilisateur s'il veut redémarrer une partie
      *
      * @param
      * @return booléen vrai si oui, faux sinon
      *
-     */
+
     public boolean askToReStartAGame() {
         while (true) {
             String response = askPlayerString("Voulez-vous redémarrer une partie? O/N ");
@@ -82,7 +104,7 @@ public class Menu {
             }
         }
     }
-
+    */
 
     /**
      * Demande à l'utilisateur de saisir un entier et le retourne.

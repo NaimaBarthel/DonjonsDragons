@@ -10,9 +10,9 @@
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/DefensiveEquipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/ficSQL" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/ficSQL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2271088370763619" />
-      <entry key="MS500" value="3.4858553825208975" />
-      <entry key="S2" value="6.667945708619957" />
-      <entry key="S5" value="7.936719306014354" />
-      <entry key="S10" value="8.443728883880645" />
-      <entry key="S30" value="8.923700594611285" />
-      <entry key="S60" value="9.50459580041682" />
-      <entry key="M2" value="10.76266530439226" />
-      <entry key="M5" value="14.296666358669166" />
-      <entry key="M10" value="18.95734768719774" />
-      <entry key="M15" value="23.878049502444807" />
-      <entry key="M30" value="40.405011069323635" />
-      <entry key="H1" value="76.33730704284672" />
-      <entry key="H2" value="145.4893867112154" />
-      <entry key="H4" value="242.83675621209846" />
-      <entry key="D1" value="827.1584959258618" />
-      <entry key="W1" value="1728.5497926314201" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="6.735916008860057E-115" />
+      <entry key="S2" value="3.15072678214524E-29" />
+      <entry key="S5" value="5.34918548126445E-12" />
+      <entry key="S10" value="3.1900765043835633E-6" />
+      <entry key="S30" value="0.023507947807740598" />
+      <entry key="S60" value="0.23889989720620888" />
+      <entry key="M2" value="0.8794780785753398" />
+      <entry key="M5" value="2.393808022823115" />
+      <entry key="M10" value="4.335849940553811" />
+      <entry key="M15" value="6.3872423669606855" />
+      <entry key="M30" value="17.948754487862647" />
+      <entry key="H1" value="55.29350473729308" />
+      <entry key="H2" value="133.78931229559035" />
+      <entry key="H4" value="252.11431961929668" />
+      <entry key="D1" value="881.9995212893841" />
+      <entry key="W1" value="1819.0063665741657" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.5606387011299407E-292" />
-      <entry key="S5" value="2.308550195726712E-117" />
-      <entry key="S10" value="4.804737575674936E-59" />
-      <entry key="S30" value="3.65239389403175E-20" />
-      <entry key="S60" value="2.0905936609019612E-10" />
-      <entry key="M2" value="2.0046315643096093E-5" />
-      <entry key="M5" value="0.03319079914007715" />
-      <entry key="M10" value="0.6615060374869144" />
-      <entry key="M15" value="2.054230555618566" />
-      <entry key="M30" value="7.171131966470946" />
-      <entry key="H1" value="14.774711997923909" />
-      <entry key="H2" value="22.80693000193999" />
-      <entry key="H4" value="30.237215114867777" />
-      <entry key="D1" value="90.01229753102251" />
-      <entry key="W1" value="219.61738748722524" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000073226" />
+      <entry key="S10" value="1.0000027060126233" />
+      <entry key="S30" value="1.013935123749274" />
+      <entry key="S60" value="1.1182854439112657" />
+      <entry key="M2" value="1.3654035744939808" />
+      <entry key="M5" value="1.9804353804158763" />
+      <entry key="M10" value="2.617972459215101" />
+      <entry key="M15" value="2.9715051931942993" />
+      <entry key="M30" value="3.8946664930539048" />
+      <entry key="H1" value="7.5221620234555955" />
+      <entry key="H2" value="15.459549646069336" />
+      <entry key="H4" value="25.502330057770266" />
+      <entry key="D1" value="89.08097700008861" />
+      <entry key="W1" value="221.85990230073753" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.155160392539654" />
-      <entry key="MS500" value="3.4336644254886233" />
-      <entry key="S2" value="6.63932140100828" />
-      <entry key="S5" value="7.922748681104296" />
-      <entry key="S10" value="8.436235195922945" />
-      <entry key="S30" value="8.920445150646156" />
-      <entry key="S60" value="9.500979034761269" />
-      <entry key="M2" value="10.757994044619918" />
-      <entry key="M5" value="14.325213847314584" />
-      <entry key="M10" value="19.610257212825843" />
-      <entry key="M15" value="25.917559924780093" />
-      <entry key="M30" value="47.552438122460195" />
-      <entry key="H1" value="91.08843602032256" />
-      <entry key="H2" value="168.27804711188722" />
-      <entry key="H4" value="273.06120824526147" />
-      <entry key="D1" value="917.1618457334321" />
-      <entry key="W1" value="1948.163863541447" />
+      <entry key="MS100" value="8.382338916426947E-9" />
+      <entry key="MS500" value="0.024247839196089246" />
+      <entry key="S2" value="0.3946101581892998" />
+      <entry key="S5" value="0.6893936905168383" />
+      <entry key="S10" value="0.8303017439106578" />
+      <entry key="S30" value="0.9738366374796207" />
+      <entry key="S60" value="1.3100036850591308" />
+      <entry key="M2" value="2.2012484818503664" />
+      <entry key="M5" value="4.336771224324267" />
+      <entry key="M10" value="6.922487761429924" />
+      <entry key="M15" value="9.331938766506815" />
+      <entry key="M30" value="21.82356343549663" />
+      <entry key="H1" value="62.79839699355084" />
+      <entry key="H2" value="149.2332628856721" />
+      <entry key="H4" value="277.60417153085643" />
+      <entry key="D1" value="971.07144221997" />
+      <entry key="W1" value="2040.862892541459" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -119,32 +119,32 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/user/Bureau/NBA/DonjonsDragons/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.18658893",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/Bureau/NBA/DonjonsDragons/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.18658893&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.campus.donjons_dragons.Main" />
@@ -168,8 +168,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.258" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.258" />
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
       </set>
     </attachedChunks>
   </component>

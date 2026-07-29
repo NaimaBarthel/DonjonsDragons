@@ -26,3 +26,38 @@ ALTER USER 'javauser'@'localhost'
 IDENTIFIED BY '9Drag8&7Donj6!';
 GRANT ALL PRIVILEGES ON db_donjons_et_dragons.* TO 'javauser'@'localhost';
 FLUSH PRIVILEGES;
+
+5.1.4
+REATE TABLE board (
+    id_board INT AUTO_INCREMENT PRIMARY KEY,
+    size INT NOT NULL
+);
+
+CREATE TABLE game_character (
+    id_character INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(20) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    life_points INT NOT NULL,
+    strength INT NOT NULL,
+    offensive_equipment VARCHAR(30),
+    defensive_equipment VARCHAR(30)
+);
+
+CREATE TABLE cell (
+    id_cell INT AUTO_INCREMENT PRIMARY KEY,
+    position INT NOT NULL,
+    cell_type VARCHAR(30) NOT NULL,
+    id_board INT NOT NULL,
+    id_character INT NULL,
+
+    CONSTRAINT uq_board_position
+        UNIQUE (id_board, position),
+
+    CONSTRAINT fk_cell_board
+        FOREIGN KEY (id_board)
+        REFERENCES board(id_board),
+
+    CONSTRAINT fk_cell_character
+        FOREIGN KEY (id_character)
+        REFERENCES game_character(id_character)
+);

@@ -111,9 +111,9 @@ public class Database {
             PreparedStatement statement = connection.prepareStatement(sql);
 
             // Détermination du type du personnage
-            String type = hero instanceof Warrior ? "Warrior" : "Wizard";
+            //String type = hero instanceof Warrior ? "Warrior" : "Wizard";
 
-            statement.setString(1, type);
+            statement.setString(1, hero.getClass().getSimpleName());
             statement.setString(2, hero.getName());
             statement.setInt(3, hero.getLevelLife());
             statement.setInt(4, hero.getLevelAttack());
@@ -140,6 +140,93 @@ public class Database {
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * Méthode qui permet de modifier un personnage en base de données
+     * @param Hero un objet de type Character à enregistrer dans la table game_character
+     */
+    public void editHero( Character hero){
+        String sql = "UPDATE game_character "
+                + "SET type = ?, "
+                + "name = ?, "
+                + "lifePoints = ?, "
+                + "strength = ?, "
+                + "offensiveEquipment = ?, "
+                + "defensiveEquipment = ? "
+                + "WHERE id = ?";
+
+        try {
+            // Création d'un objet PreparedStatement permettant de préparer la requête SQL
+            //en remplaçant les paramètres (?) par les valeurs du héros
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            // Détermination du type du personnage
+            //String type = hero instanceof Warrior ? "Warrior" : "Wizard";
+
+            statement.setString(1, hero.getClass().getSimpleName());
+            statement.setString(2, hero.getName());
+            statement.setInt(3, hero.getLevelLife());
+            statement.setInt(4, hero.getLevelAttack());
+
+            if (hero.getOffensiveEquip() != null) {
+                statement.setString(5, hero.getOffensiveEquip().getClass().getSimpleName());
+            } else {
+                statement.setNull(5, java.sql.Types.VARCHAR);
+            }
+
+            if (hero.getDefensiveEquip() != null) {
+                statement.setString(6, hero.getDefensiveEquip().getClass().getSimpleName());
+            } else {
+                statement.setNull(6, java.sql.Types.VARCHAR);
+            }
+
+            statement.setInt(7, hero.getId());
+
+
+            int rows = statement.executeUpdate();
+
+            if (rows > 0) {
+                System.out.println("Le héros a été modifié avec succès.");
+            } else {
+                System.out.println("Aucun héros trouvé avec l'id : " + hero.getId());
+            }
+
+            statement.close();
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void changeLifePoints(Character hero) {
+
+        String sql = "UPDATE game_character SET lifePoints = ? WHERE id = ?";
+
+        try {
+
+            // Création d'un objet PreparedStatement permettant de préparer la requête SQL
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            // Mise à jour des points de vie du héros
+            statement.setInt(1, hero.getLevelLife());
+
+            // Identifiant du héros à modifier
+            statement.setInt(2, hero.getId());
+
+            int rows = statement.executeUpdate();
+
+            if (rows > 0) {
+                System.out.println("Les points de vie du héros ont été mis à jour.");
+            } else {
+                System.out.println("Aucun héros trouvé avec l'id : " + hero.getId());
+            }
+
+            statement.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
