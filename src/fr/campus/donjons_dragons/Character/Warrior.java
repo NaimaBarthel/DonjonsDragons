@@ -5,13 +5,13 @@ public class Warrior extends Character {
 
     public Warrior(String name) {
         //super(name,leveLife,levelAttack,offensiveEquip);
-        super(name, 10, 5, null, 1);
+        super(name, 10, 5, null, null,1);
         // this.type = typeChar;
     }
 
     //toString  méthode pour afficher les informations du personnages
     public String toString() {
-        return String.format("Warrior [ Type: %s, Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, position: %d]", type,
-                super.getName(), super.getLevelLife(), super.getLevelAttack(), super.getOffensiveEquip(), super.getPosition());
+        return String.format("Warrior [ Type: %s, Name: %s, LeveLife: %d, LevelAttack: %d, Offensive Equipment: %s, Defensive Equipment: %s, position: %d]", type,
+                super.getName(), super.getLevelLife(), super.getLevelAttack(), super.getOffensiveEquip(), super.getDefensiveEquip(), super.getPosition());
     }
 }

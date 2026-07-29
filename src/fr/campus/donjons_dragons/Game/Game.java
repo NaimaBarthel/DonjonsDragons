@@ -1,5 +1,6 @@
 package fr.campus.donjons_dragons.Game;
 
+import db.Database;
 import fr.campus.donjons_dragons.Character.Character;
 import fr.campus.donjons_dragons.Character.Warrior;
 import fr.campus.donjons_dragons.Character.Wizard;
@@ -18,12 +19,14 @@ public class Game {
     private final Board board = new Board();
     private final Scanner scanner = new Scanner(System.in);
     private fr.campus.donjons_dragons.Character.Character player;
+    private Database database = new Database();
 
     /**
      * Constructeur
      * où on initialise le jeu en lançant le menu
      */
     public Game() {
+        database.connect();
     }
 
 
@@ -63,6 +66,7 @@ public class Game {
                 running = menu.askToReStartAGame();
             }
             System.out.println("A bientôt!!!");
+            database.close();
         }
 
     }
@@ -112,6 +116,7 @@ public class Game {
         System.out.print("Bravo!! ");
         displayPlayerOnBoard(player.getPosition());  //Affichage position joueur
         System.out.println("Partie terminée.");
+
     }
 
     /**
@@ -145,6 +150,9 @@ public class Game {
         {
             player = new Wizard(chosenName);
         }
+
+        // Enregistrement du personnage dans la base de données
+        database.createHero(player);
 
         System.out.println("Personnage créé : " + player);
     }

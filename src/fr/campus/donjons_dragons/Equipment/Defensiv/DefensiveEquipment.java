@@ -25,8 +25,6 @@ public abstract class DefensiveEquipment {
     //Getter
     /**
      * Getter du type de l'équipement défensif
-     *
-     * @param :
      * @return une chaine de character: le type de l'équipement défensif
      */
     public String getType() {

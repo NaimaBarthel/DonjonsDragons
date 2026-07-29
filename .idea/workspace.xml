@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357f174-b48b-4b38-9456-aba810970e73" name="Changes" comment="partie 2.3 Plateau de jeu et déplacement joueur 24/07/2026">
-      <change afterPath="$PROJECT_DIR$/src/db/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/ficSQL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DonjonsDragons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DonjonsDragons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Character/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Equipment/Defensiv/DefensiveEquipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/campus/donjons_dragons/Main.java" afterDir="false" />
     </list>
@@ -46,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4977969177107638E-8" />
-      <entry key="MS500" value="0.047218983390036925" />
-      <entry key="S2" value="0.8114646376399247" />
-      <entry key="S5" value="1.8653469371686153" />
-      <entry key="S10" value="3.2274185599710155" />
-      <entry key="S30" value="6.173508432965336" />
-      <entry key="S60" value="7.735192177833974" />
-      <entry key="M2" value="8.819492573340318" />
-      <entry key="M5" value="11.750877756419996" />
-      <entry key="M10" value="18.9644519993615" />
-      <entry key="M15" value="25.840064009167463" />
-      <entry key="M30" value="43.99743097922146" />
-      <entry key="H1" value="80.09515129137739" />
-      <entry key="H2" value="135.59577566346832" />
-      <entry key="H4" value="198.61818255148458" />
-      <entry key="D1" value="729.4727946023154" />
-      <entry key="W1" value="1579.738188747465" />
+      <entry key="MS100" value="1.2271088370763619" />
+      <entry key="MS500" value="3.4858553825208975" />
+      <entry key="S2" value="6.667945708619957" />
+      <entry key="S5" value="7.936719306014354" />
+      <entry key="S10" value="8.443728883880645" />
+      <entry key="S30" value="8.923700594611285" />
+      <entry key="S60" value="9.50459580041682" />
+      <entry key="M2" value="10.76266530439226" />
+      <entry key="M5" value="14.296666358669166" />
+      <entry key="M10" value="18.95734768719774" />
+      <entry key="M15" value="23.878049502444807" />
+      <entry key="M30" value="40.405011069323635" />
+      <entry key="H1" value="76.33730704284672" />
+      <entry key="H2" value="145.4893867112154" />
+      <entry key="H4" value="242.83675621209846" />
+      <entry key="D1" value="827.1584959258618" />
+      <entry key="W1" value="1728.5497926314201" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0002113620474906" />
-      <entry key="S2" value="1.125487412598713" />
-      <entry key="S5" value="1.5539692632863256" />
-      <entry key="S10" value="2.075696669278128" />
-      <entry key="S30" value="2.9924305528678166" />
-      <entry key="S60" value="3.4194323364790082" />
-      <entry key="M2" value="3.6867370884582398" />
-      <entry key="M5" value="3.8686014564474234" />
-      <entry key="M10" value="3.9332324913290946" />
-      <entry key="M15" value="3.955283289335965" />
-      <entry key="M30" value="3.9921627932199115" />
-      <entry key="H1" value="4.302454963652498" />
-      <entry key="H2" value="5.475036834694723" />
-      <entry key="H4" value="7.77399432011545" />
-      <entry key="D1" value="64.9741245800593" />
-      <entry key="W1" value="190.3151333790046" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="2.5606387011299407E-292" />
+      <entry key="S5" value="2.308550195726712E-117" />
+      <entry key="S10" value="4.804737575674936E-59" />
+      <entry key="S30" value="3.65239389403175E-20" />
+      <entry key="S60" value="2.0905936609019612E-10" />
+      <entry key="M2" value="2.0046315643096093E-5" />
+      <entry key="M5" value="0.03319079914007715" />
+      <entry key="M10" value="0.6615060374869144" />
+      <entry key="M15" value="2.054230555618566" />
+      <entry key="M30" value="7.171131966470946" />
+      <entry key="H1" value="14.774711997923909" />
+      <entry key="H2" value="22.80693000193999" />
+      <entry key="H4" value="30.237215114867777" />
+      <entry key="D1" value="90.01229753102251" />
+      <entry key="W1" value="219.61738748722524" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.879070775962848E-7" />
-      <entry key="MS500" value="0.09918317566509977" />
-      <entry key="S2" value="1.2865313838550145" />
-      <entry key="S5" value="2.8573024547486736" />
-      <entry key="S10" value="4.835365250144434" />
-      <entry key="S30" value="8.902622350716097" />
-      <entry key="S60" value="10.997933175049557" />
-      <entry key="M2" value="12.419991263925073" />
-      <entry key="M5" value="15.58276366572715" />
-      <entry key="M10" value="22.878846438168292" />
-      <entry key="M15" value="29.782637486935748" />
-      <entry key="M30" value="47.982952095675635" />
-      <entry key="H1" value="84.39286237220401" />
-      <entry key="H2" value="141.06597121438895" />
-      <entry key="H4" value="206.38762349811327" />
-      <entry key="D1" value="794.4393034654443" />
-      <entry key="W1" value="1770.050261293976" />
+      <entry key="MS100" value="1.155160392539654" />
+      <entry key="MS500" value="3.4336644254886233" />
+      <entry key="S2" value="6.63932140100828" />
+      <entry key="S5" value="7.922748681104296" />
+      <entry key="S10" value="8.436235195922945" />
+      <entry key="S30" value="8.920445150646156" />
+      <entry key="S60" value="9.500979034761269" />
+      <entry key="M2" value="10.757994044619918" />
+      <entry key="M5" value="14.325213847314584" />
+      <entry key="M10" value="19.610257212825843" />
+      <entry key="M15" value="25.917559924780093" />
+      <entry key="M30" value="47.552438122460195" />
+      <entry key="H1" value="91.08843602032256" />
+      <entry key="H2" value="168.27804711188722" />
+      <entry key="H4" value="273.06120824526147" />
+      <entry key="D1" value="917.1618457334321" />
+      <entry key="W1" value="1948.163863541447" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -184,6 +186,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.puml" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -201,6 +206,21 @@
     <MESSAGE value="fin partie 2.2 Structure du jeu et création de personnages  23/07/2026" />
     <MESSAGE value="partie 2.3 Plateau de jeu et déplacement joueur 24/07/2026" />
     <option name="LAST_COMMIT_MESSAGE" value="partie 2.3 Plateau de jeu et déplacement joueur 24/07/2026" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fr/campus/donjons_dragons/Game/Game.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

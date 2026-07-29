@@ -1,9 +1,9 @@
 package db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+
+import fr.campus.donjons_dragons.Character.Character;
+import fr.campus.donjons_dragons.Character.Warrior;
 
 /**
  * @ClassName Database
@@ -46,12 +46,12 @@ public class Database {
     public void getCharacters() {
 
         try {
-
+            // Création d'un objet Statement permettant d'exécuter des requêtes SQL
             Statement statement = connection.createStatement();
-
+            // Exécute la requête SQL et stocke le résultat dans un objet ResultSet
             ResultSet result = statement.executeQuery("SELECT * FROM game_character");
 
-            while (result.next()) {
+            while (result.next()) {  //Tant qu'il y a des lignes à lire
 
                 System.out.println("ID : " + result.getInt("id"));
                 System.out.println("Nom : " + result.getString("name"));
@@ -64,6 +64,82 @@ public class Database {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     *  Méthode qui permet d'afficher la liste de tous les personnages
+     *
+     */
+    public void getHeroes(){
+        try {
+            // Création d'un objet Statement permettant d'exécuter des requêtes SQL
+            Statement statement = connection.createStatement();
+            // Exécute la requête SQL et stocke le résultat dans un objet ResultSet
+            ResultSet result = statement.executeQuery("SELECT * FROM game_character");
+            System.out.println("=========== Liste des héros ===========");
+            while (result.next()) {  //Tant qu'il y a des lignes à lire
+
+                System.out.println(result.getInt("id") + " - "
+                                    + result.getString("name")
+                                    + " ( " + result.getString("type")
+                                    + " )");
+
+                System.out.println("Vie : " + result.getInt("lifePoints"));
+                System.out.println("Force : " + result.getInt("strength"));
+                System.out.println("Equip. d'attaque : " + result.getString("offensiveEquipment"));
+                System.out.println("Equip. de  défense : " + result.getString("defensiveEquipment"));
+                System.out.println("----------------------------------------");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Méthode qui permet d'insérer un personnage en base de données
+     * @param Hero un objet de type Character à enregistrer dans la table game_character
+     */
+    public void createHero( Character hero){
+        String sql = "INSERT INTO game_character "
+                + "(type, name, lifePoints, strength, offensiveEquipment, defensiveEquipment) "
+                + "VALUES (?,?,?,?,?,?)";
+
+        try {
+            // Création d'un objet PreparedStatement permettant de préparer la requête SQL
+            //en remplaçant les paramètres (?) par les valeurs du héros
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            // Détermination du type du personnage
+            String type = hero instanceof Warrior ? "Warrior" : "Wizard";
+
+            statement.setString(1, type);
+            statement.setString(2, hero.getName());
+            statement.setInt(3, hero.getLevelLife());
+            statement.setInt(4, hero.getLevelAttack());
+
+            if (hero.getOffensiveEquip() != null) {
+                statement.setString(5, hero.getOffensiveEquip().getClass().getSimpleName());
+            } else {
+                statement.setNull(5, java.sql.Types.VARCHAR);
+            }
+
+            if (hero.getDefensiveEquip() != null) {
+                statement.setString(6, hero.getDefensiveEquip().getClass().getSimpleName());
+            } else {
+                statement.setNull(6, java.sql.Types.VARCHAR);
+            }
+
+
+            statement.executeUpdate();
+
+            System.out.println("Le héros a été enregistré avec succès.");
+
+            statement.close();
+       } catch (SQLException e){
+            e.printStackTrace();
+        }
+
     }
 
     /**
